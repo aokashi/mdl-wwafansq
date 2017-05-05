@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+body {
+	background: #f0e0c0;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.social-btn {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.social-btn__twitter {
+	background-image: url('./assets/social_twitter.png');
+}
+
+.fansq-header {
+	background: url('./assets/header-bg.png') center / cover;
+}
+
+.fansq-content {
+	margin: auto;
+}
+
+.fansq-index-card.mdl-card > .mdl-card__title {
+	background: url('assets/index-bg.gif') center / cover;
+	height: 240px;
+}
+
+.fansq-index-card.mdl-card > .mdl-card__title > .mdl-card__title-text {
+	background: rgba(0, 0, 0, .5);
+	color: #fff;
+}
+
+.fansq-footer .mdl-mega-footer--right-section a .material-icons {
+	position: relative;
+	top: 6px;
+}
