@@ -22,8 +22,9 @@ body {
 	background: url('./assets/header-bg.png') center / cover;
 }
 
-.fansq-content {
+.fansq--max-width {
 	margin: auto;
+	max-width: 1280px;
 }
 
 .fansq-index-card.mdl-card > .mdl-card__title {
