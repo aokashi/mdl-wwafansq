@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="fansq--max-width">
+  <div class="mdl-grid">
+  {{ range .Data.Pages }}
+    <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-card mdl-shadow-2dp">
+      <div class="mdl-card__title">
+        <h3 class="mdl-card__title-text"><a href="{{ .URL }}" title="{{ .Title }}">{{ .Title }}</a></h3>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <p>{{ .Params.Description }}</p>
+      </div>
+    </div>
+  {{ end }}
+  </div>
+</div>
+{{ end }}
