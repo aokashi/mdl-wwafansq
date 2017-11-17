@@ -1,63 +1,81 @@
+{{ define "style" }}
+<style>
+.fansq-index-card.mdl-card > .mdl-card__title {
+	background: url('../assets/index-bg.gif') center / cover;
+	height: 240px;
+}
+
+.fansq-index-card.mdl-card > .mdl-card__title > .mdl-card__title-text {
+	background: rgba(0, 0, 0, .5);
+	color: #fff;
+	font-weight: 600;
+	padding: .5rem;
+}
+</style>
+{{ end }}
+
 {{ define "main" }}
-<div class="mdl-grid">
-	<div class="fansq-index-card mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp">
-		<div class="mdl-card__title">
-			<h2 class="mdl-card__title-text">WWAユーザー交流の場、WWA FanSquare</h2>
-		</div>
-		<div class="mdl-card__supporting-text">
-			<p><strong>WWA FanSquare</strong>は、WWAユーザーとの交流と、WWAに関する同人誌やグッズの販売を行うサークルです。</p>
-			<p><strong>Fan</strong>の名前は、楽しむ意味で<strong>Fun</strong>ということもできます。<strong>Square</strong>は、WWAの特徴である正方形のフィールド画面が由来です。</p>
-			<h4>こんなことやってます</h4>
-			<ul>
-				<li>WWAユーザー間との交流ができる場を作っています。</li>
-				<li>WWAユーザーのための同人誌、グッズの制作や販売を行っています。</li>
-				<li>WWAコンテストの開催をしています(予定)。</li>
-			</ul>
-		</div>
-	</div>
-</div>
-<div class="mdl-grid">
-	<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-card mdl-shadow--2dp">
-		<div class="mdl-card__title">
-			<h3 class="mdl-card__title-text">World Wide Adventure 20th Anniversary Book - WWAの冒険書 - 20年の軌跡をQuick Load!!</h3>
-		</div>
-		<div class="mdl-card__supporting-text">
-			<p>WWAが開発されてから20周年を迎えた2016年に、執筆した同人誌です。</p>
-			<p>コミックマーケット 91で初版を販売しました。</p>
-		</div>
-		<div class="mdl-card__actions mdl-card--border">
-			<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://www.dlsite.com/home/work/=/product_id/RJ199732.html">
-				購入する
-			</a>
-			<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://twitter.com/i/moments/811567888234520576">
-				サンプルを見る
-			</a>
+<div class="fansq--max-width">
+	<div class="mdl-grid">
+		<div class="fansq-index-card mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp">
+			<div class="mdl-card__title">
+				<h2 class="mdl-card__title-text">WWAユーザー交流の場、WWA FanSquare</h2>
+			</div>
+			<div class="mdl-card__supporting-text">
+				<p><strong>WWA FanSquare</strong>は、WWAユーザーとの交流と、WWAに関する同人誌やグッズの販売を行うサークルです。</p>
+				<p><strong>Fan</strong>の名前は、楽しむ意味で<strong>Fun</strong>ということもできます。<strong>Square</strong>は、WWAの特徴である正方形のフィールド画面が由来です。</p>
+				<h4>こんなことやってます</h4>
+				<ul>
+					<li>WWAユーザー間との交流ができる場を作っています。</li>
+					<li>WWAユーザーのための同人誌、グッズの制作や販売を行っています。</li>
+					<li>WWAコンテストの開催をしています(予定)。</li>
+				</ul>
+			</div>
 		</div>
 	</div>
-	<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-card mdl-shadow--2dp">
-		<div class="mdl-card__title">
-			<h3 class="mdl-card__title-text">WWAコンテスト2017 開催中！</h3>
+	<div class="mdl-grid">
+		<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-card mdl-shadow--2dp">
+			<div class="mdl-card__title">
+				<h3 class="mdl-card__title-text">World Wide Adventure 20th Anniversary Book - WWAの冒険書 - 20年の軌跡をQuick Load!!</h3>
+			</div>
+			<div class="mdl-card__supporting-text">
+				<p>WWAが開発されてから20周年を迎えた2016年に、執筆した同人誌です。</p>
+				<p>コミックマーケット 91で初版を販売しました。</p>
+			</div>
+			<div class="mdl-card__actions mdl-card--border">
+				<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://www.dlsite.com/home/work/=/product_id/RJ199732.html">
+					購入する
+				</a>
+				<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://twitter.com/i/moments/811567888234520576">
+					サンプルを見る
+				</a>
+			</div>
 		</div>
-		<div class="mdl-card__supporting-text">
-			<p>WWAコンテスト 2017の作品が応募できます。期限は<strong>9月24日</strong>まで！</p>
+		<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-card mdl-shadow--2dp">
+			<div class="mdl-card__title">
+				<h3 class="mdl-card__title-text">WWAコンテスト2017 開催中！</h3>
+			</div>
+			<div class="mdl-card__supporting-text">
+				<p>WWAコンテスト 2017の作品が応募できます。期限は<strong>9月24日</strong>まで！</p>
+			</div>
+			<div class="mdl-card__actions mdl-card--border">
+				<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://wwacontest.aruneko.net">
+					詳細を見る
+				</a>
+			</div>
 		</div>
-		<div class="mdl-card__actions mdl-card--border">
-			<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://wwacontest.aruneko.net">
-				詳細を見る
-			</a>
-		</div>
-	</div>
-	<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp">
-		<div class="mdl-card__title">
-			<h3 class="mdl-card__title-text">参考リンク</h3>
-		</div>
-		<div class="mdl-card__supporting-text">
-			<ul>
-				<li><a href="http://wwajp.com/">キャラバンサークル</a>(WWA原作)</li>
-				<li><a href="http://wwawing.com">WWA Wing</a>(WWAのJavaScript移植版)</li>
-				<li><a href="http://wwacontest.aruneko.net">WWAコンテスト</a></li>
-				<li><a href="https://www.aokashi.net">Aokashi Home</a>(サイト制作者のサイト)</li>
-			</ul>
+		<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp">
+			<div class="mdl-card__title">
+				<h3 class="mdl-card__title-text">参考リンク</h3>
+			</div>
+			<div class="mdl-card__supporting-text">
+				<ul>
+					<li><a href="http://wwajp.com/">キャラバンサークル</a>(WWA原作)</li>
+					<li><a href="http://wwawing.com">WWA Wing</a>(WWAのJavaScript移植版)</li>
+					<li><a href="http://wwacontest.aruneko.net">WWAコンテスト</a></li>
+					<li><a href="https://www.aokashi.net">Aokashi Home</a>(サイト制作者のサイト)</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>

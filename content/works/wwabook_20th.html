@@ -1,187 +1,232 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+---
+title: "World Wide Adventure 20th Anniversary Book"
+---
+{{ define "style" }}
+<style>
+.fansq-wwabook-20th-title-section {
+	background: url('wwabook_20th-bg.png') center / cover;
+	padding-top: 1rem;
+	position: relative;
+}
+
+.fansq-wwabook-20th__logo {
+	text-align: center;
+}
+
+.fansq-wwabook-20th__logo > img {
+	max-width: 100%;
+	height: auto;
+	max-height: 192px;
+}
+
+.fansq-wwabook-20th__description {
+	background-color: #ffffc0;
+	margin: 1rem 1rem 0;
+	padding: 1rem;
+}
+
+.fansq-wwabook-20th__share__btn-facebook {
+	overflow-x: hidden;
+	width: 75px;
+}
+
+.fansq-wwabook-20th__share {
+	text-align: center;
+}
+
+.fansq-wwabook-20th__share__btn {
+	display: inline-block;
+}
+
+.fansq-wwabook-20th-interview-section {
+	background-color: #28459b;
+	color: white;
+}
+
+.fansq-wwabook-20th-interview-section > .fansq--max-width {
+	background: url('wwabook_20th-interview.png') center 25% / cover;
+	height: 640px;
+	position: relative;
+}
+
+.fansq-wwabook-20th-interview__text {
+	background-color: #28459b;
+	bottom: 0;
+	box-sizing: border-box;
+	padding: 1rem;
+	position: absolute;
+	width: 100%;
+}
+
+.fansq-wwabook-20th-history-section {
+	background-color: #996633;
+	color: white;
+}
+
+.fansq-wwabook-20th-history-section > .fansq--max-width {
+	background: url('wwabook_20th-history.png') no-repeat center top / 100%;
+	height: 480px;
+	position: relative;
+}
+
+.fansq-wwabook-20th-history__text {
+	background-color: #996633;
+	bottom: 0;
+	box-sizing: border-box;
+	padding: 1rem;
+	position: absolute;
+	width: 100%;
+}
+
+.fansq-wwabook-20th-pages-section {
+	background-color: #339966;
+	color: white;
+}
+
+.fansq-wwabook-20th-pages__image {
+	background: url('wwabook_20th-pages.png') center 25% / cover;
+	height: 360px;
+}
+
+.fansq-wwabook-20th-pages__text {
+	padding: 1rem;
+}
+
+.fansq-wwabook-20th-buy__title {
+	padding: 0 1rem;
+}
+</style>
+{{ end }}
+
+{{ define "head" }}
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@wwa_fansq">
 	<meta name="twitter:title" content="WWAの冒険書 20年の軌跡をQuickLoad!!">
 	<meta name="twitter:description" content="WWAの20周年を記念に執筆した同人誌です。WWA製作者様のインタビューや、今に至るまでの年表など、WWAの20年が詰まった一冊です。">
-	<meta name="twitter:image" content="assets/wwa_20thbook.png">
-	<link rel="stylesheet" href="./css/material.min.css">
-	<link rel="stylesheet" href="./css/styles.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<script src="./js/material.min.js"></script>
-	<title>World Wide Adventure 20th Anniversary Book - WWA FanSquare</title>
-</head>
-<body>
-	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-		<header class="fansq-header mdl-layout__header mdl-shadow--4dp">
-			<div class="mdl-layout-icon"></div>
-			<div class="fansq-logo-row mdl-layout__header-row">
-				<span class="mdl-layout-title">WWA FanSquare</span>
-				<span class="mdl-layout-spacer"></span>
-			</div>
-		</header>
-		<div class="mdl-layout__drawer">
-			<span class="mdl-layout-title">Menu</span>
-			<nav class="mdl-navigation">
-				<a class="mdl-navigation__link" href="./">HOME</a>
-				<a class="mdl-navigation__link" href="https://wwacontest.aruneko.net">Contest</a>
-				<a class="mdl-navigation__link" href="wwabook_20th.html">20周年記念誌</a>
-			</nav>
-		</div>
-		<main class="mdl-layout__content">
-			<a name="top"></a>
-			<div class="fansq-wwabook-20th-title-section">
-				<!--<div class="fansq-wwabook-20th__char"></div>-->
-				<div class="fansq-wwabook-20th__logo">
-					<img src="./assets/wwabook_20th-logo.png" alt="World Wide Adventure 20th Anniversary Book - WWAの冒険書 - 20年の軌跡をQuickLoad!!" width="683" height="192">
-				</div>
-				<div class="fansq-wwabook-20th__description">
-					<div class="fansq--max-width">
-						<p>WWAの20周年を記念に執筆した同人誌です。WWA製作者様のインタビューや、今に至るまでの年表など、WWAの20年が詰まった一冊です。</p>
-						<ul>
-							<li>初版出版日: <strong>2016年12月29日</strong> (コミックマーケット 91)</li>
-							<li>ページ数: <strong>56ページ</strong> (フルカラー 無線綴じ仕様)</li>
-						</ul>
-						<div class="fansq-wwabook-20th__share">
-							<div class="fansq-wwabook-20th__share__btn fansq-wwabook-20th__share__btn-twitter">
-								<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.wwafansq.com/wwabook_20th.html" data-text="WWAの冒険書 ～20年の軌跡をQuickLoad!!～" data-via="wwa_fansq" data-lang="ja" data-size="large" data-hashtags="WWAの薄い本">ツイート</a>
-								<script>
-									!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-								</script>
-							</div>
-							<div class="fansq-wwabook-20th__share__btn fansq-wwabook-20th__share__btn-facebook">
-								<iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fwww.wwafansq.com%2Fwwabook_20th.html&layout=button&size=large&mobile_iframe=false&width=75&height=28&appId" width="75" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">
-								</iframe>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="fansq-wwabook-20th-interview-section">
-				<div class="fansq--max-width">
-					<div class="fansq-wwabook-20th-interview__text">
-						<h3 class="fansq-wwabook-20th-interview__text-title">NAO様とのインタビュー記事</h3>
-						<div class="fansq-wwabook-20th-interview__text-description">
-							<p>WWAの制作者「NAO」様とのインタビュー記事が特集として入っています。</p>
-							<p>WWAが作られた経緯、カニのキャラクターについて、・・・など広い視点で回答してもらっています。</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="fansq-wwabook-20th-history-section">
-				<div class="fansq--max-width">
-					<div class="fansq-wwabook-20th-history__text">
-						<h3 class="fansq-wwabook-20th-history__text-title">WWAの20年間を走ってきた年表</h3>
-						<div class="fansq-wwabook-20th-history__text-description">
-							<p>WWAが開発された1996年から執筆時の2016年までの20年間、WWA作品の公開やコンテストの開催などが行われてきました。</p>
-							<p>そんな20年間を年表にまとめています。また、一部の作品の簡単な解説も含まれています。</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="fansq-wwabook-20th-pages-section">
-				<div class="fansq--max-width">
-					<div class="fansq-wwabook-20th-pages__text">
-						<h3 class="fansq-wwabook-20th-pages__text-title">その他色々...</h3>
-						<div class="fansq-wwabook-20th-pages__text-description">
-							<p>WWAのマップデータを読む、旧作成ツールを起動する、昔と今のWWAの比較...など、WWAに関わることがこの一冊に。</p>
-							<p>56ページのコンテンツをお楽しみください。</p>
-						</div>
-					</div>
-					<div class="fansq-wwabook-20th-pages__image"></div>
-				</div>
-			</div>
-			<div class="fansq-wwabook-20th-buy-section">
-				<div class="fansq--max-width">
-					<div class="fansq-wwabook-20th-buy__title">
-						<h3 class="fansq-wwabook-20th-buy__title-text">購入するには</h3>
-					</div>
-					<div class="mdl-grid">
-						<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp">
-							<div class="mdl-card__title">
-								<h3 class="mdl-card__title-text">DLSite.com</h3>
-							</div>
-							<div class="mdl-card__supporting-text">
-								<p>すぐに読みたい方はDLSite.comにて、PDF形式で販売しています。</p>
-								<p>お手持ちのスマートフォンや電子書籍に保存しておくといつでも見ることができます。</p>
-							</div>
-							<div class="mdl-card__actions mdl-card--border">
-								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://www.dlsite.com/home/work/=/product_id/RJ199732.html">
-									購入する
-								</a>
-							</div>
-						</div>
-						<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp">
-							<div class="mdl-card__title">
-								<h3 class="mdl-card__title-text">pixiv BOOTH</h3>
-							</div>
-							<div class="mdl-card__supporting-text">
-								<p>物理本が欲しい方はpixiv BOOTHにて販売を予定しています。</p>
-								<p>数に限りがございます。</p>
-							</div>
-							<div class="mdl-card__actions mdl-card--border">
-								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#">
-									購入する(現在準備中)
-								</a>
-							</div>
-						</div>
-						<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp">
-							<div class="mdl-card__title">
-								<h3 class="mdl-card__title-text">既に購入している方には</h3>
-							</div>
-							<div class="mdl-card__supporting-text">
-								<p>物理本、ダウンロード本ともに、誤字脱字が含まれている箇所がございます。恐れ入りますが、誤りのある箇所は正誤表にてご確認ください。</p>
-							</div>
-							<div class="mdl-card__actions mdl-card--border">
-								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://docs.google.com/document/d/1GU1PcXMEYXhD0H99wgzygErIfRkMVVXPZIUyHSkbGco/pub">
-									正誤表を確認する
-								</a>
-							</div>
-						</div>
-						<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp">
-							<div class="mdl-card__title">
-								<h3 class="mdl-card__title-text">サンプル</h3>
-							</div>
-							<div class="mdl-card__supporting-text">
-								<p>この本の一部をサンプルとして見ることができます。WWAのフィールド、雰囲気に合わせたページのデザインをお楽しみください。</p>
-							</div>
-							<div class="mdl-card__actions mdl-card--border">
-								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://twitter.com/i/moments/811567888234520576">
-									サンプルを見る
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<footer class="fansq-footer mdl-mega-footer">
-				<div class="fansq--max-width mdl-mega-footer--middle-section">
-					<div class="mdl-mega-footer--left-section">
-						<button class="mdl-mega-footer__social-btn social-btn social-btn__twitter" onclick="location.href='https://twitter.com/wwa_fansq'">
-							<span class="invisible">Twitter</span>
-						</button>
-					</div>
-					<div class="mdl-mega-footer--right-section">
-						<a href="#top">
-							トップへ戻る
-							<i class="material-icons">expand_less</i>
-						</a>
-					</div>
-				</div>
-				<div class="fansq--max-width mdl-mega-footer--bottom-section">
-					<p>
-						<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br>
-						このページの内容は、例外を除き、 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">クリエイティブ・コモンズ 表示 4.0 国際 ライセンス</a>の下に提供されています。ただし、WWA原作(キャラバンサークル)から提供されている画像や音声、文章、ソースコードなどの著作物につきましては、一部の著作権が原作者のNAO様に帰属します。詳しくは<a href="http://wwajp.com">WWA公式サイトをご確認ください</a>。
-					</p>
-					<p>当サイトは <a href="https://getmdl.io">Material Design Lite</a> およびそれに付属、参照される各種ライブラリを使用しています。HTMLソースよりご確認願います。</p>
-					<p>Internet RPG "<a href="http://wwajp.com">World Wide Adventure</a>" © 1996-2017 NAO</p>
-					<p>"WWA FanSquare" © 2017 WWA FanSquare</p>
-				</div>
-			</footer>
-		</main>
+	<meta name="twitter:image" content="wwa_20thbook.png">
+{{ end }}
+
+<div class="fansq-wwabook-20th-title-section">
+	<!--<div class="fansq-wwabook-20th__char"></div>-->
+	<div class="fansq-wwabook-20th__logo">
+		<img src="wwabook_20th-logo.png" alt="World Wide Adventure 20th Anniversary Book - WWAの冒険書 - 20年の軌跡をQuickLoad!!" width="683" height="192">
 	</div>
-</body>
-</html>
+	<div class="fansq-wwabook-20th__description">
+		<div class="fansq--max-width">
+			<p>WWAの20周年を記念に執筆した同人誌です。WWA製作者様のインタビューや、今に至るまでの年表など、WWAの20年が詰まった一冊です。</p>
+			<ul>
+				<li>初版出版日: <strong>2016年12月29日</strong> (コミックマーケット 91)</li>
+				<li>ページ数: <strong>56ページ</strong> (フルカラー 無線綴じ仕様)</li>
+			</ul>
+			<div class="fansq-wwabook-20th__share">
+				<div class="fansq-wwabook-20th__share__btn fansq-wwabook-20th__share__btn-twitter">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.wwafansq.com/wwabook_20th.html" data-text="WWAの冒険書 ～20年の軌跡をQuickLoad!!～" data-via="wwa_fansq" data-lang="ja" data-size="large" data-hashtags="WWAの薄い本">ツイート</a>
+					<script>
+						!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+					</script>
+				</div>
+				<div class="fansq-wwabook-20th__share__btn fansq-wwabook-20th__share__btn-facebook">
+					<iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fwww.wwafansq.com%2Fwwabook_20th.html&layout=button&size=large&mobile_iframe=false&width=75&height=28&appId" width="75" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true">
+					</iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="fansq-wwabook-20th-interview-section">
+	<div class="fansq--max-width">
+		<div class="fansq-wwabook-20th-interview__text">
+			<h3 class="fansq-wwabook-20th-interview__text-title">NAO様とのインタビュー記事</h3>
+			<div class="fansq-wwabook-20th-interview__text-description">
+				<p>WWAの制作者「NAO」様とのインタビュー記事が特集として入っています。</p>
+				<p>WWAが作られた経緯、カニのキャラクターについて、・・・など広い視点で回答してもらっています。</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="fansq-wwabook-20th-history-section">
+	<div class="fansq--max-width">
+		<div class="fansq-wwabook-20th-history__text">
+			<h3 class="fansq-wwabook-20th-history__text-title">WWAの20年間を走ってきた年表</h3>
+			<div class="fansq-wwabook-20th-history__text-description">
+				<p>WWAが開発された1996年から執筆時の2016年までの20年間、WWA作品の公開やコンテストの開催などが行われてきました。</p>
+				<p>そんな20年間を年表にまとめています。また、一部の作品の簡単な解説も含まれています。</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="fansq-wwabook-20th-pages-section">
+	<div class="fansq--max-width">
+		<div class="fansq-wwabook-20th-pages__text">
+			<h3 class="fansq-wwabook-20th-pages__text-title">その他色々...</h3>
+			<div class="fansq-wwabook-20th-pages__text-description">
+				<p>WWAのマップデータを読む、旧作成ツールを起動する、昔と今のWWAの比較...など、WWAに関わることがこの一冊に。</p>
+				<p>56ページのコンテンツをお楽しみください。</p>
+			</div>
+		</div>
+		<div class="fansq-wwabook-20th-pages__image"></div>
+	</div>
+</div>
+<div class="fansq-wwabook-20th-buy-section">
+	<div class="fansq--max-width">
+		<div class="fansq-wwabook-20th-buy__title">
+			<h3 class="fansq-wwabook-20th-buy__title-text">購入するには</h3>
+		</div>
+		<div class="mdl-grid">
+			<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp">
+				<div class="mdl-card__title">
+					<h3 class="mdl-card__title-text">DLSite.com</h3>
+				</div>
+				<div class="mdl-card__supporting-text">
+					<p>すぐに読みたい方はDLSite.comにて、PDF形式で販売しています。</p>
+					<p>お手持ちのスマートフォンや電子書籍に保存しておくといつでも見ることができます。</p>
+				</div>
+				<div class="mdl-card__actions mdl-card--border">
+					<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="http://www.dlsite.com/home/work/=/product_id/RJ199732.html">
+						購入する
+					</a>
+				</div>
+			</div>
+			<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp">
+				<div class="mdl-card__title">
+					<h3 class="mdl-card__title-text">pixiv BOOTH</h3>
+				</div>
+				<div class="mdl-card__supporting-text">
+					<p>物理本が欲しい方はpixiv BOOTHにて販売を予定しています。</p>
+					<p>数に限りがございます。</p>
+				</div>
+				<div class="mdl-card__actions mdl-card--border">
+					<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#">
+						購入する(現在準備中)
+					</a>
+				</div>
+			</div>
+			<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp">
+				<div class="mdl-card__title">
+					<h3 class="mdl-card__title-text">既に購入している方には</h3>
+				</div>
+				<div class="mdl-card__supporting-text">
+					<p>物理本、ダウンロード本ともに、誤字脱字が含まれている箇所がございます。恐れ入りますが、誤りのある箇所は正誤表にてご確認ください。</p>
+				</div>
+				<div class="mdl-card__actions mdl-card--border">
+					<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://docs.google.com/document/d/1GU1PcXMEYXhD0H99wgzygErIfRkMVVXPZIUyHSkbGco/pub">
+						正誤表を確認する
+					</a>
+				</div>
+			</div>
+			<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--2dp">
+				<div class="mdl-card__title">
+					<h3 class="mdl-card__title-text">サンプル</h3>
+				</div>
+				<div class="mdl-card__supporting-text">
+					<p>この本の一部をサンプルとして見ることができます。WWAのフィールド、雰囲気に合わせたページのデザインをお楽しみください。</p>
+				</div>
+				<div class="mdl-card__actions mdl-card--border">
+					<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://twitter.com/i/moments/811567888234520576">
+						サンプルを見る
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
