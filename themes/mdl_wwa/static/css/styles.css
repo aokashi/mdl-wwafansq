@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+body {
+	background: #f0e0c0;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.social-btn {
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.social-btn__twitter {
+	background-image: url('social_twitter.png');
+}
+
+.fansq-header {
+	background: url('header-bg.png') center / cover;
+}
+
+.fansq--max-width {
+	margin: auto;
+	max-width: 1280px;
+}
+
+.fansq-footer .mdl-mega-footer--right-section a .material-icons {
+	position: relative;
+	top: 6px;
+}
+
+/* ここからさきは内容に応じて追加しておくこと */
+
+.fansq-index-card.mdl-card > .mdl-card__title {
+	background: url('../assets/index-bg.gif') center / cover;
+	height: 240px;
+}
+
+.fansq-index-card.mdl-card > .mdl-card__title > .mdl-card__title-text {
+	background: rgba(0, 0, 0, .5);
+	color: #fff;
+	font-weight: 600;
+	padding: .5rem;
+}
+
+.fansq-wwabook-20th-title-section {
+	background: url('../assets/wwabook_20th-bg.png') center / cover;
+	padding-top: 1rem;
+	position: relative;
+}
+
+.fansq-wwabook-20th__logo {
+	text-align: center;
+}
+
+.fansq-wwabook-20th__logo > img {
+	max-width: 100%;
+	height: auto;
+	max-height: 192px;
+}
+
+.fansq-wwabook-20th__description {
+	background-color: #ffffc0;
+	margin: 1rem 1rem 0;
+	padding: 1rem;
+}
+
+.fansq-wwabook-20th__share__btn-facebook {
+	overflow-x: hidden;
+	width: 75px;
+}
+
+.fansq-wwabook-20th__share {
+	text-align: center;
+}
+
+.fansq-wwabook-20th__share__btn {
+	display: inline-block;
+}
+
+.fansq-wwabook-20th-interview-section {
+	background-color: #28459b;
+	color: white;
+}
+
+.fansq-wwabook-20th-interview-section > .fansq--max-width {
+	background: url('../assets/wwabook_20th-interview.png') center 25% / cover;
+	height: 640px;
+	position: relative;
+}
+
+.fansq-wwabook-20th-interview__text {
+	background-color: #28459b;
+	bottom: 0;
+	box-sizing: border-box;
+	padding: 1rem;
+	position: absolute;
+	width: 100%;
+}
+
+.fansq-wwabook-20th-history-section {
+	background-color: #996633;
+	color: white;
+}
+
+.fansq-wwabook-20th-history-section > .fansq--max-width {
+	background: url('../assets/wwabook_20th-history.png') no-repeat center top / 100%;
+	height: 480px;
+	position: relative;
+}
+
+.fansq-wwabook-20th-history__text {
+	background-color: #996633;
+	bottom: 0;
+	box-sizing: border-box;
+	padding: 1rem;
+	position: absolute;
+	width: 100%;
+}
+
+.fansq-wwabook-20th-pages-section {
+	background-color: #339966;
+	color: white;
+}
+
+.fansq-wwabook-20th-pages__image {
+	background: url('../assets/wwabook_20th-pages.png') center 25% / cover;
+	height: 360px;
+}
+
+.fansq-wwabook-20th-pages__text {
+	padding: 1rem;
+}
+
+.fansq-wwabook-20th-buy__title {
+	padding: 0 1rem;
+}

@@ -1,0 +1,5 @@
+baseURL = "http://www.wwafansq.com/"
+languageCode = "ja"
+title = "WWA FanSquare"
+theme = "mdl_wwa"
+hasCJKLaunguage = true
