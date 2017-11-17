@@ -6,6 +6,12 @@ publishDir = "docs"
 hasCJKLaunguage = true
 
 [[menu.main]]
+  name = "WWAを知る"
+  url = "/about/"
+[[menu.main]]
+  name = "作品"
+  url = "/works/"
+[[menu.main]]
   name = "コンテスト"
   url = "/contest/"
 [[menu.main]]
