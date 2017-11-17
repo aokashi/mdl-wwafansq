@@ -3,3 +3,10 @@ languageCode = "ja"
 title = "WWA FanSquare"
 theme = "mdl_wwa"
 hasCJKLaunguage = true
+
+[[menu.main]]
+  name = "コンテスト"
+  url = "/contest/"
+[[menu.main]]
+  name = "薄い本正誤表"
+  url = "/eratta/"

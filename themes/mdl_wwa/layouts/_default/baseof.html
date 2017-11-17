@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/material.min.css">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="./js/material.min.js"></script>
+{{ block "head" . }}
+{{ end }}
+  <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  {{ block "header" . }}
+    {{ partial "header.html" . }}
+  {{ end }}
+    <main class="mdl-layout__content">
+      <a name="top"></a>
+      <div class="fansq--max-width">
+      {{ block "main" . }}
+        {{ .Content }}
+      {{ end }}
+      </div>
+      <footer class="fansq-footer mdl-mega-footer">
+        <div class="fansq--max-width mdl-mega-footer--middle-section">
+          <div class="mdl-mega-footer--left-section">
+            <button class="mdl-mega-footer__social-btn social-btn social-btn__twitter" onclick="location.href='https://twitter.com/wwa_fansq'">
+              <span class="invisible">Twitter</span>
+            </button>
+          </div>
+          <div class="mdl-mega-footer--right-section">
+            <a href="#top">
+              トップへ戻る
+              <i class="material-icons">expand_less</i>
+            </a>
+          </div>
+        </div>
+      {{ block "footer" . }}
+        {{ partial "footer.html" . }}
+      {{ end }}
+        </footer>
+    </main>
+  </div>
+</body>
+</html>
