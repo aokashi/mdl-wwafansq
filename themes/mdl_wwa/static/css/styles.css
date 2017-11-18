@@ -37,7 +37,7 @@ body {
 
 /* .fansq */
 
-.fansq--max-width {
+.fansq-max-width {
 	margin: auto;
 	max-width: 1280px;
 }
