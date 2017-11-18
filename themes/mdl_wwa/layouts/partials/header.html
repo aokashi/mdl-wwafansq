@@ -9,7 +9,7 @@
     <div class="fansq-navigation-container">
       <nav class="fansq-navigation mdl-navigation">
         {{ range .Site.Menus.main }}
-        <a class="mdl-navigation__link" href="{{ .URL }}" title="#">{{ .Name }}</a>
+        <a class="mdl-navigation__link" href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
         {{ end }}
       </nav>
     </div>
@@ -24,7 +24,7 @@
   <span class="mdl-layout-title">Menu</span>
   <nav class="mdl-navigation">
   {{ range .Site.Menus.main }}
-    <a class="mdl-navigation__link" href="{{ .URL }}">{{ .Name }}</a>
+    <a class="mdl-navigation__link" href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
   {{ end }}
   </nav>
 </div>
