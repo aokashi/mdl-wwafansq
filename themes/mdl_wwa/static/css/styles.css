@@ -18,16 +18,42 @@ body {
 	background-image: url('social_twitter.png');
 }
 
-.fansq-header {
-	background: url('header-bg.png') center / cover;
-}
+/* .fansq */
 
 .fansq--max-width {
 	margin: auto;
 	max-width: 1280px;
 }
 
+.fansq-header {
+	background: url('header-bg.png') center / cover;
+}
+
+.fansq-mobile-title {
+	display: none;
+}
+
+.fansq-logo-image {
+	height: 58px;
+	width: 320px;
+}
+
 .fansq-footer .mdl-mega-footer--right-section a .material-icons {
 	position: relative;
 	top: 6px;
+}
+
+/* mobile */
+
+@media (max-width: 839px) {
+	.fansq-title,
+	.fansq-header-spacer,
+	.fansq-navigation-container {
+		display: none;
+	}
+
+	.fansq-mobile-title {
+		display: block;
+		margin: 0 auto;
+	}
 }

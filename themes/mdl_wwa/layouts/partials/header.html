@@ -1,23 +1,24 @@
 <header class="fansq-header mdl-layout__header mdl-shadow--4dp">
   <div class="mdl-layout__header-row">
     <span class="fansq-title mdl-layout-title">
-      <img class="fansq-logo-image" alt="{{ .Title }}" src="{{ .Site.BaseURL }}assets/wwa_fansq.png">
+      <a class="fansq-title-link" href="{{ .Site.BaseURL }}" title="{{ .Title }}">
+        <img class="fansq-logo-image" alt="{{ .Title }}" src="{{ .Site.BaseURL }}assets/wwa_fansq.png">
+      </a>
+    </span>
+    <div class="fansq-header-spacer mdl-layout-spacer"></div>
+    <div class="fansq-navigation-container">
+      <nav class="fansq-navigation mdl-navigation">
+        {{ range .Site.Menus.main }}
+        <a class="mdl-navigation__link" href="{{ .URL }}" title="#">{{ .Name }}</a>
+        {{ end }}
+      </nav>
+    </div>
+    <span class="fansq-mobile-title mdl-layout-title">
+      <a class="fansq-title-link" href="{{ .Site.BaseURL }}" title="{{ .Title }}">
+        <img class="fansq-logo-image" alt="{{ .Title }}" src="{{ .Site.BaseURL }}assets/wwa_fansq.png">
+      </a>
     </span>
   </div>
-  <div class="fansq-header-spacer mdl-layout-spacer"></div>
-  <div class="fansq-navigation-container">
-    <nav class="fansq-navigation mdl-navigation">
-    {{ range .Site.Menus.main }}
-      <a class="mdl-navigation__link" href="{{ .URL }}" title="#">{{ .Name }}</a>
-    {{ end }}
-    </nav>
-  </div>
-  <span class="fansq-mobile-title mdl-layout-title">
-    <img class="fansq-logo-image" alt="{{ .Title }}" src="{{ .Site.BaseURL }}assets/wwa_fansq.png">
-  </span>
-  <button class="fansq-more-button mdl-js-button mdl-button--icon mdl-js-ropple=effect" id="more-button">
-    <i class="material-icons">more_vert</i>
-  </button>
 </header>
 <div class="mdl-layout__drawer">
   <span class="mdl-layout-title">Menu</span>
