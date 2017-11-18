@@ -18,15 +18,28 @@ body {
 	background-image: url('social_twitter.png');
 }
 
+.icon-menu {
+	display: flex;
+	flex-flow: row nowrap;
+}
+	.icon-menu__items {
+		flex: 0 0 64px;
+		padding: 0 1rem;
+	}
+	.icon-menu__items__link {
+		color: inherit;
+	}
+	.icon-menu__items__icon {
+		display: block;
+		height: 80px;
+		margin: 0 2rem;
+	}
+
 /* .fansq */
 
 .fansq--max-width {
 	margin: auto;
 	max-width: 1280px;
-}
-
-.fansq-header {
-	background: url('header-bg.png') center / cover;
 }
 
 .fansq-mobile-title {
@@ -36,6 +49,20 @@ body {
 .fansq-logo-image {
 	height: 58px;
 	width: 320px;
+}
+
+.fansq-card-container .mdl-cell {
+	position: relative;
+}
+.fansq-card-container .mdl-card__supporting-text {
+	padding-bottom: 56px;
+}
+.fansq-card-container .mdl-card__actions {
+	bottom: 0;
+	position: absolute;
+}
+.fansq-card-container .mdl-card__actions .mdl-button {
+	font-weight: bold;
 }
 
 .fansq-footer .mdl-mega-footer--right-section a .material-icons {
