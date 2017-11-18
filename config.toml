@@ -14,8 +14,8 @@ hasCJKLaunguage = true
   url = "/works/"
   weight = 2
 [[menu.main]]
-  name = "コンテスト"
-  url = "/contest/"
+  name = "お知らせ"
+  url = "/information/"
   weight = 3
 [[menu.main]]
   name = "薄い本正誤表"
