@@ -22,14 +22,15 @@ body {
 	display: flex;
 	flex-flow: row nowrap;
 }
-	.icon-menu__items {
-		flex: 0 0 64px;
-		padding: 0 1rem;
-	}
-	.icon-menu__items__link {
+
+.icon-menu .icon-item {
+	flex: 0 0 64px;
+	padding: 0 1rem;
+}
+	.icon-menu .icon-item__link {
 		color: inherit;
 	}
-	.icon-menu__items__icon {
+	.icon-menu .icon-item__icon {
 		display: block;
 		height: 80px;
 		margin: 0 2rem;
@@ -72,7 +73,7 @@ body {
 
 /* mobile */
 
-@media (max-width: 839px) {
+@media (max-width: 1024px) {
 	.fansq-title,
 	.fansq-header-spacer,
 	.fansq-navigation-container {
