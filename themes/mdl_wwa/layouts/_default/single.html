@@ -11,15 +11,15 @@
     font-weight: bold;
     padding: .5rem;
   }
-  {{ end }}
-</style>
+{{ end }}
+  </style>
 {{ end }}
 
 {{ define "main" }}
 <div class="fansq-max-width mdl-grid">
   <div class="{{ .File.BaseFileName }}-card mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
     <div class="mdl-card__title">
-      <h2 class="mdl-card__title-text">WWAを知る</h2>
+      <h2 class="mdl-card__title-text">{{ .Title }}</h2>
     </div>
     <div class="mdl-card__supporting-text">
 {{ .Content }}
