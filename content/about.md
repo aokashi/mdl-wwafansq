@@ -1,5 +1,7 @@
 ---
 title: "WWAを知る"
+
+image: "../assets/index-bg.gif"
 ---
 
 WWA FanSquareはゲームシステム World Wide Adventure のゲームを利用する方や制作する方を対象に、様々な情報を提供するサークルです。主におすすめのWWA作品をご紹介していく形になります。また、年に1回行われるWWAコンテストの実施を担当しています。
