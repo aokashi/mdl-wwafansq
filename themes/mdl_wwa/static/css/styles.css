@@ -18,32 +18,36 @@ body {
 	background-image: url('social_twitter.png');
 }
 
-.icon-menu {
+.wide-menu {
 	display: flex;
 	flex-flow: row nowrap;
 }
+	.wide-menu .icon {
+		flex: 0 0 64px;
+		padding: 0 1rem;
+	}
 
-.icon-menu .icon-item {
-	flex: 0 0 64px;
-	padding: 0 1rem;
+.icon__link {
+	color: inherit;
 }
-	.icon-menu .icon-item__link {
-		color: inherit;
-	}
-	.icon-menu .icon-item__icon {
-		display: block;
-		height: 80px;
-		margin: 0 2rem;
-	}
-
-/* .fansq */
-
-.fansq-max-width {
+.icon__img {
+	display: block;
+	height: 80px;
+	margin: 0 2rem;
+}
+	
+.content-width {
 	margin: auto;
 	max-width: 1280px;
 }
 
-.fansq-header .fansq-title--mobile {
+.section.section--padding {
+	padding: 32px 0;
+}
+
+/* .fansq */
+
+.fansq-header-title--mobile {
 	display: none;
 }
 
@@ -52,17 +56,17 @@ body {
 	width: 320px;
 }
 
-.fansq-card-container .mdl-cell {
+.card-container--bottom-btn .mdl-cell {
 	position: relative;
 }
-.fansq-card-container .mdl-card__supporting-text {
+.card-container--bottom-btn .mdl-card__supporting-text {
 	padding-bottom: 56px;
 }
-.fansq-card-container .mdl-card__actions {
+.card-container--bottom-btn .mdl-card__actions {
 	bottom: 0;
 	position: absolute;
 }
-.fansq-card-container .mdl-card__actions .mdl-button {
+.card-container--bottom-btn .mdl-card__actions .mdl-button {
 	font-weight: bold;
 }
 
@@ -74,13 +78,13 @@ body {
 /* mobile */
 
 @media (max-width: 1024px) {
-	.fansq-header .fansq-title,
-	.fansq-header .fansq-spacer,
-	.fansq-header .fansq-navigation-container {
+	.fansq-header-title,
+	.fansq-header__spacer,
+	.fansq-header-navigation-container {
 		display: none;
 	}
 
-	.fansq-header .fansq-title--mobile {
+	.fansq-header-title--mobile {
 		display: block;
 		margin: 0 auto;
 	}

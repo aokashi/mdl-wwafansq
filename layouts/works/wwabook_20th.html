@@ -1,94 +1,80 @@
 {{ define "style" }}
 <style>
-.fansq-wwabook-20th-title-section {
+.page-wwabook-20th-title {
 	background: url('wwabook_20th-bg.png') center / cover;
 	padding-top: 1rem;
 	position: relative;
 }
-
-.fansq-wwabook-20th__logo {
-	text-align: center;
-}
-
-.fansq-wwabook-20th__logo > img {
-	max-width: 100%;
-	height: auto;
-	max-height: 192px;
-}
-
-.fansq-wwabook-20th__description {
-	background-color: #ffffc0;
-	padding: 1rem;
-}
-
-.fansq-wwabook-20th__share {
-	text-align: center;
-}
-	.fansq-wwabook-20th__share .share-btn {
-		display: inline-block;
+	.page-wwabook-20th-title__logo {
+		text-align: center;
 	}
-	.fansq-wwabook-20th__share .share-btn--facebook {
-		overflow-x: hidden;
-		width: 75px;
+	.page-wwabook-20th-title__logo > img {
+		max-width: 100%;
+		height: auto;
+		max-height: 192px;
 	}
+	.page-wwabook-20th-title__description {
+		background-color: #ffffc0;
+		padding: 1rem;
+	}
+	.page-wwabook-20th-title__share {
+		text-align: center;
+	}
+		.page-wwabook-20th-title__share .share-btn {
+			display: inline-block;
+		}
+		.page-wwabook-20th-title__share .share-btn--facebook {
+			overflow-x: hidden;
+			width: 75px;
+		}
 
-.fansq-wwabook-20th-interview-section {
+.page-wwabook-20th-interview {
 	background-color: #28459b;
 	color: white;
 }
+	.page-wwabook-20th-interview > .content-width {
+		background: url('wwabook_20th-interview.png') center 25% / cover;
+		height: 640px;
+		position: relative;
+	}
+	.page-wwabook-20th-interview__text {
+		background-color: #28459b;
+		bottom: 0;
+		box-sizing: border-box;
+		padding: 1rem;
+		position: absolute;
+		width: 100%;
+	}
 
-.fansq-wwabook-20th-interview-section > .fansq-max-width {
-	background: url('wwabook_20th-interview.png') center 25% / cover;
-	height: 640px;
-	position: relative;
-}
-
-.fansq-wwabook-20th-interview__text {
-	background-color: #28459b;
-	bottom: 0;
-	box-sizing: border-box;
-	padding: 1rem;
-	position: absolute;
-	width: 100%;
-}
-
-.fansq-wwabook-20th-history-section {
+.page-wwabook-20th-history {
 	background-color: #996633;
 	color: white;
 }
+	.page-wwabook-20th-history > .content-width {
+		background: url('wwabook_20th-history.png') no-repeat center top / 100%;
+		height: 480px;
+		position: relative;
+	}
+	.page-wwabook-20th-history__text {
+		background-color: #996633;
+		bottom: 0;
+		box-sizing: border-box;
+		padding: 1rem;
+		position: absolute;
+		width: 100%;
+	}
 
-.fansq-wwabook-20th-history-section > .fansq-max-width {
-	background: url('wwabook_20th-history.png') no-repeat center top / 100%;
-	height: 480px;
-	position: relative;
-}
-
-.fansq-wwabook-20th-history__text {
-	background-color: #996633;
-	bottom: 0;
-	box-sizing: border-box;
-	padding: 1rem;
-	position: absolute;
-	width: 100%;
-}
-
-.fansq-wwabook-20th-pages-section {
+.page-wwabook-20th-pages {
 	background-color: #339966;
 	color: white;
 }
-
-.fansq-wwabook-20th-pages__image {
-	background: url('wwabook_20th-pages.png') center 25% / cover;
-	height: 360px;
-}
-
-.fansq-wwabook-20th-pages__text {
-	padding: 1rem;
-}
-
-.fansq-wwabook-20th-buy__title {
-	padding: 0 1rem;
-}
+	.page-wwabook-20th-pages__image {
+		background: url('wwabook_20th-pages.png') center 25% / cover;
+		height: 360px;
+	}
+	.page-wwabook-20th-pages__text {
+		padding: 1rem;
+	}
 </style>
 {{ end }}
 

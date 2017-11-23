@@ -1,45 +1,41 @@
 {{ define "style" }}
 <style>
-.fansq-title-section {
+.page-index-title {
 	background-color: #20c020;
 }
-.fansq-top-bg {
+.page-index-title__bg {
 	background: #20c020 url('./assets/index-title-section.png') no-repeat center top / cover;
 	height: 512px;
 }
-.fansq-top-area {
+.page-index-title__text {
 	margin-top: -512px;
 }
-	.fansq-top-area .top-text {
+	.page-index-title__text .top-text {
 		display: inline-block;
 		margin: 96px 0;
 		padding: 1rem;
 		background: rgba(255, 255, 255, .875);
 	}
-		.fansq-top-area .top-text__top {
+		.page-index-title__text .top-text__top {
 			font-size: 3rem;
 			font-weight: bold;
 			margin: 2rem 0;
 		}
-		.fansq-top-area .top-text__description {
+		.page-index-title__text .top-text__description {
 			font-size: 1.2rem;
 			margin: 1rem 0;
 		}
-.fansq-playing-section,
-.fansq-link-section {
-	padding: 32px 0;
-}
-.fansq-playing-section {
+.page-index-playing {
 	background-color: #ffff99;
 }
-	.fansq-playing-section__list {
+	.page-index-playing-section__list {
 		margin: 1rem 0;
 	}
 @media (max-width: 839px) {
-	.fansq-top-area .top-text__top {
+	.page-index-title__text .top-text__top {
 		font-size: 2.2rem;
 	}
-	.fansq-top-area .top-text__description {
+	.page-index-title__text .top-text__description {
 		font-size: 1rem;
 	}
 }
@@ -47,9 +43,9 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="fansq-title-section">
-	<div class="fansq-top-bg"></div>
-	<div class="fansq-top-area mdl-typography--text-center">
+<div class="page-index-title section">
+	<div class="page-index-title__bg"></div>
+	<div class="page-index-title__text mdl-typography--text-center">
 		<div class="top-text">
 			<div class="top-text__top">
 				WWAを楽しもう！
@@ -60,7 +56,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="fansq-information-section fansq-max-width">
+	<div class="page-index-information content-width">
 		<div class="mdl-card-container mdl-grid">
 			<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-card mdl-shadow--2dp">
 				<div class="mdl-card__title">
@@ -93,33 +89,33 @@
 		</div>
 	</div>
 </div>
-<div class="fansq-playing-section mdl-typography--text-center">
-	<div class="fansq-max-width">
-		<div class="fansq-playing-section__title mdl-typography--display-1">
+<div class="page-index-playing section section--padding mdl-typography--text-center">
+	<div class="content-width">
+		<div class="section__title mdl-typography--display-1">
 			WWAをプレイするには
 		</div>
-		<div class="fansq-playing-section__list icon-menu">
-			<div class="icon-item icon-item--wwajp">
-				<a class="icon-item__link" href="http://www.wwajp.com/">
-					<img class="icon-item__icon" src="./assets/items-wwajp.png" alt="キャラバンサークル">
-					<span class="icon-item__text">キャラバンサークル</span>
+		<div class="page-index-playing__list wide-menu">
+			<div class="icon icon--wwajp">
+				<a class="icon__link" href="http://www.wwajp.com/">
+					<img class="icon__img" src="./assets/items-wwajp.png" alt="キャラバンサークル">
+					<span class="icon__text">キャラバンサークル</span>
 				</a>
 			</div>
-			<div class="icon-item icon-item--plicy">
-				<a class="icon-item__link" href="https://plicy.net/">
-					<img class="icon-item__icon" src="./assets/items-plicy.png" alt="プリシー">
-					<span class="icon-item__text">プリシー</span>
+			<div class="icon icon--plicy">
+				<a class="icon__link" href="https://plicy.net/">
+					<img class="icon__img" src="./assets/items-plicy.png" alt="プリシー">
+					<span class="icon__text">プリシー</span>
 				</a>
 			</div>
-			<div class="icon-item icon-item--more">
-				<div class="icon-item__icon"></div>
-				<span class="icon-item__text">...今後も増加中！</span>
+			<div class="icon icon--more">
+				<div class="icon__img"></div>
+				<span class="icon__text">...今後も増加中！</span>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="fansq-link-section fansq-max-width">
-	<h2 class="fansq-link-section__title mdl-typography--text-center mdl-typography--display-1">
+<div class="page-index-link section section--padding content-width">
+	<h2 class="section__title mdl-typography--text-center mdl-typography--display-1">
 		WWA関連リンク
 	</h2>
 	<div class="mdl-card-container fansq-card-container mdl-grid">
@@ -162,7 +158,7 @@
 {{ end }}
 
 {{ define "footer" }}
-<div class="fansq-max-width mdl-mega-footer--bottom-section">
+<div class="content-width mdl-mega-footer--bottom-section">
 	<p>
 		<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br>
 		このページの内容は、例外を除き、 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">クリエイティブ・コモンズ 表示 4.0 国際 ライセンス</a>の下に提供されています。ただし、WWA原作(キャラバンサークル)から提供されている画像や音声、文章、ソースコードなどの著作物につきましては、一部の著作権が原作者のNAO様に帰属します。詳しくは<a href="http://wwajp.com">WWA公式サイトをご確認ください</a>。
