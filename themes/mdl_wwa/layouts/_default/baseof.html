@@ -4,16 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+{{- with .Params -}}
+{{- if and (isset . "image") (isset . "description") }}
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@{{ $.Site.Params.twitter_id }}">
+  <meta name="twitter:title" content="{{ .title }}">
+  <meta name="twitter:description" content="{{ .description }}">
+  <meta name="twitter:image" content="{{ .image }}">
+{{- end -}}
+{{- if isset . "description" }}
+  <meta name="descrption" content="{{ .description }}">
+{{- end -}}
+{{- end -}}
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/material.min.css">
   <link rel="stylesheet" href="{{ .Site.BaseURL }}css/styles.css">
   <link rel="stylesheet" href="{{ .Site.BaseURL }}{{ .Site.Params.siteCSS }}">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}wwa_fansq-icon.png">
-{{ block "style" . }}
-{{ end }}
   <script src="{{ .Site.BaseURL }}js/material.min.js"></script>
-{{ block "head" . }}
-{{ end }}
+{{- block "head" . }}
+{{- end }}
   <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
 </head>
 <body>

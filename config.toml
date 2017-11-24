@@ -27,4 +27,5 @@ hasCJKLaunguage = true
   weight = 5
 
 [params]
+  twitter_id = "wwa_fansq"
   siteCSS = "css/wwa_fansq.css"
