@@ -1,91 +1,102 @@
 @charset "utf-8";
 
 body {
-	background: #f0e0c0;
+  background: #f0e0c0;
 }
 
 .invisible {
-	visibility: hidden;
+  visibility: hidden;
 }
 
 .social-btn {
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
 }
 
 .social-btn--twitter {
-	background-image: url('social_twitter.png');
+  background-image: url('social_twitter.png');
 }
 
-.wide-menu {
-	display: flex;
-	flex-flow: row nowrap;
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
 }
-	.wide-menu .icon {
-		flex: 0 0 64px;
-		padding: 0 1rem;
-	}
+.menu--wide {
+	overflow-x: auto;
+}
+  .menu__item--icon {
+    flex: 0 0 64px;
+    padding: 0 1rem;
+  }
 
 .icon__link {
-	color: inherit;
+  color: inherit;
 }
 .icon__img {
-	display: block;
-	height: 80px;
-	margin: 0 2rem;
+  display: block;
+  height: 80px;
+  margin: 0 2rem;
 }
-	
+  
 .content-width {
-	margin: auto;
-	max-width: 1280px;
+  margin: auto;
+  max-width: 1280px;
 }
 
 .section.section--padding {
-	padding: 32px 0;
+  padding: 32px 0;
+}
+	.section__text {
+		padding: 1rem;
+	}
+	.section__title {
+		padding: 0 1rem;
+	}
+
+.logo-image {
+  height: 58px;
+  width: 320px;
 }
 
-/* .fansq */
+/* .header */
 
-.fansq-header-title--mobile {
-	display: none;
+.header__title--mobile {
+  display: none;
 }
 
-.fansq-header .fansq-logo-image {
-	height: 58px;
-	width: 320px;
-}
+/* .card-container */
 
 .card-container--bottom-btn .mdl-cell {
-	position: relative;
+  position: relative;
 }
 .card-container--bottom-btn .mdl-card__supporting-text {
-	padding-bottom: 56px;
+  padding-bottom: 56px;
 }
 .card-container--bottom-btn .mdl-card__actions {
-	bottom: 0;
-	position: absolute;
+  bottom: 0;
+  position: absolute;
 }
 .card-container--bottom-btn .mdl-card__actions .mdl-button {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .fansq-footer .mdl-mega-footer--right-section a .material-icons {
-	position: relative;
-	top: 6px;
+  position: relative;
+  top: 6px;
 }
 
 /* mobile */
 
 @media (max-width: 1024px) {
-	.fansq-header-title,
-	.fansq-header__spacer,
-	.fansq-header-navigation-container {
-		display: none;
-	}
+  .header__title,
+  .header__spacer,
+  .header-navigation-container {
+    display: none;
+  }
 
-	.fansq-header-title--mobile {
-		display: block;
-		margin: 0 auto;
-	}
+  .header__title--mobile {
+    display: block;
+    margin: 0 auto;
+  }
 }

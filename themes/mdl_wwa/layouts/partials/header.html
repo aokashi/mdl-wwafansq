@@ -1,21 +1,21 @@
-<header class="fansq-header mdl-layout__header mdl-shadow--4dp">
+<header class="header mdl-layout__header mdl-shadow--4dp">
   <div class="mdl-layout__header-row">
-    <span class="fansq-header-title mdl-layout-title">
-      <a class="fansq-header-title__link" href="{{ .Site.BaseURL }}" title="{{ .Title }}">
-        <img class="fansq-logo-image" alt="{{ .Title }}" src="{{ .Site.BaseURL }}assets/wwa_fansq.png">
+    <span class="header__title mdl-layout-title">
+      <a class="header__title-link" href="{{ .Site.BaseURL }}" title="{{ .Title }}">
+        <img class="logo-image" alt="{{ .Title }}" src="{{ .Site.BaseURL }}assets/wwa_fansq.png">
       </a>
     </span>
-    <div class="fansq-header__spacer mdl-layout-spacer"></div>
-    <div class="fansq-header-navigation-container">
-      <nav class="fansq-header-navigation mdl-navigation">
+    <div class="header__spacer mdl-layout-spacer"></div>
+    <div class="header-navigation-container">
+      <nav class="header-navigation mdl-navigation">
         {{ range .Site.Menus.main }}
         <a class="mdl-navigation__link" href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
         {{ end }}
       </nav>
     </div>
-    <span class="fansq-header-title fansq-header-title--mobile mdl-layout-title">
-      <a class="fansq-header-title__link" href="{{ .Site.BaseURL }}" title="{{ .Title }}">
-        <img class="fansq-logo-image" alt="{{ .Title }}" src="{{ .Site.BaseURL }}assets/wwa_fansq.png">
+    <span class="header__title header__title--mobile mdl-layout-title">
+      <a class="header__title-link" href="{{ .Site.BaseURL }}" title="{{ .Title }}">
+        <img class="logo-image" alt="{{ .Title }}" src="{{ .Site.BaseURL }}assets/wwa_fansq.png">
       </a>
     </span>
   </div>

@@ -1,41 +1,41 @@
 {{ define "style" }}
 <style>
-.page-index-title {
+.index-title {
 	background-color: #20c020;
 }
-.page-index-title__bg {
+.index-title__bg {
 	background: #20c020 url('./assets/index-title-section.png') no-repeat center top / cover;
 	height: 512px;
 }
-.page-index-title__text {
+.index-title__text {
 	margin-top: -512px;
 }
-	.page-index-title__text .top-text {
+	.index-title__text .top-text {
 		display: inline-block;
 		margin: 96px 0;
 		padding: 1rem;
 		background: rgba(255, 255, 255, .875);
 	}
-		.page-index-title__text .top-text__top {
+		.index-title__text .top-text__top {
 			font-size: 3rem;
 			font-weight: bold;
 			margin: 2rem 0;
 		}
-		.page-index-title__text .top-text__description {
+		.index-title__text .top-text__description {
 			font-size: 1.2rem;
 			margin: 1rem 0;
 		}
-.page-index-playing {
+.index-playing {
 	background-color: #ffff99;
 }
-	.page-index-playing-section__list {
+	.index-playing-section__list {
 		margin: 1rem 0;
 	}
 @media (max-width: 839px) {
-	.page-index-title__text .top-text__top {
+	.index-title__text .top-text__top {
 		font-size: 2.2rem;
 	}
-	.page-index-title__text .top-text__description {
+	.index-title__text .top-text__description {
 		font-size: 1rem;
 	}
 }
@@ -43,9 +43,9 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="page-index-title section">
-	<div class="page-index-title__bg"></div>
-	<div class="page-index-title__text mdl-typography--text-center">
+<div class="index-title section">
+	<div class="index-title__bg"></div>
+	<div class="index-title__text mdl-typography--text-center">
 		<div class="top-text">
 			<div class="top-text__top">
 				WWAを楽しもう！
@@ -56,7 +56,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="page-index-information content-width">
+	<div class="index-information content-width">
 		<div class="mdl-card-container mdl-grid">
 			<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-card mdl-shadow--2dp">
 				<div class="mdl-card__title">
@@ -89,36 +89,36 @@
 		</div>
 	</div>
 </div>
-<div class="page-index-playing section section--padding mdl-typography--text-center">
+<div class="index-playing section section--padding mdl-typography--text-center">
 	<div class="content-width">
 		<div class="section__title mdl-typography--display-1">
 			WWAをプレイするには
 		</div>
-		<div class="page-index-playing__list wide-menu">
-			<div class="icon icon--wwajp">
+		<div class="index-playing__list menu menu--wide">
+			<div class="menu__item menu__item--icon icon icon--wwajp">
 				<a class="icon__link" href="http://www.wwajp.com/">
 					<img class="icon__img" src="./assets/items-wwajp.png" alt="キャラバンサークル">
 					<span class="icon__text">キャラバンサークル</span>
 				</a>
 			</div>
-			<div class="icon icon--plicy">
+			<div class="menu__item menu__item--icon icon icon--plicy">
 				<a class="icon__link" href="https://plicy.net/">
 					<img class="icon__img" src="./assets/items-plicy.png" alt="プリシー">
 					<span class="icon__text">プリシー</span>
 				</a>
 			</div>
-			<div class="icon icon--more">
+			<div class="menu__item menu__item--icon icon icon--more">
 				<div class="icon__img"></div>
 				<span class="icon__text">...今後も増加中！</span>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="page-index-link section section--padding content-width">
+<div class="index-link section section--padding content-width">
 	<h2 class="section__title mdl-typography--text-center mdl-typography--display-1">
 		WWA関連リンク
 	</h2>
-	<div class="mdl-card-container fansq-card-container mdl-grid">
+	<div class="card-container--bottom-btn mdl-card-container mdl-grid">
 		<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-card mdl-shadow--2dp">
 			<div class="mdl-card__title">
 				<h3 class="mdl-card__title-text">キャラバンサークル</h3>
