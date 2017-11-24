@@ -1,7 +1,61 @@
-{{ define "style" }}
-<style>
+.index-title {
+	background-color: #20c020;
+}
+.index-title__bg {
+	background: #20c020 url('index-title-bg.png') no-repeat center top / cover;
+	height: 512px;
+}
+.index-title__text {
+	margin-top: -512px;
+}
+	.index-title__text .top-text {
+		display: inline-block;
+		margin: 96px 0;
+		padding: 1rem;
+		background: rgba(255, 255, 255, .875);
+	}
+		.index-title__text .top-text__top {
+			font-size: 3rem;
+			font-weight: bold;
+			margin: 2rem 0;
+		}
+		.index-title__text .top-text__description {
+			font-size: 1.2rem;
+			margin: 1rem 0;
+		}
+.index-playing {
+	background-color: #ffff99;
+}
+	.index-playing-section__list {
+		margin: 1rem 0;
+	}
+
+.about-wwa {
+  background-color: #ffff99;
+}
+.about-wwa__card .mdl-card__title {
+  height: 225px;
+}
+.about-wwa__card--playing .mdl-card__title {
+  background: url('about-wwa_playing.png') center / cover;
+}
+.about-wwa__card--making .mdl-card__title {
+  background: url('about-wwa_making.png') center / cover;
+}
+.about-wwa__card--world .mdl-card__title {
+  background: url('about-wwa_world.png') center / cover;
+}
+.about-wwa__card--making .mdl-card__title-text,
+.about-wwa__card--world .mdl-card__title-text {
+  background-color: rgba(255, 255, 255, .75);
+  padding: .5rem;
+}
+.about-fansq {
+  background-color: #ccff99;
+}
+
 .wwabook-20th-title {
-  background: url('wwabook_20th-bg.png') center / cover;
+  background: url('wwabook_20th-title-bg.png') center / cover;
   padding-top: 1rem;
   position: relative;
 }
@@ -27,7 +81,6 @@
       overflow-x: hidden;
       width: 75px;
     }
-
 .wwabook-20th-interview {
   background-color: #28459b;
   color: white;
@@ -44,7 +97,6 @@
     position: absolute;
     width: 100%;
   }
-
 .wwabook-20th-history {
   background-color: #996633;
   color: white;
@@ -61,7 +113,6 @@
     position: absolute;
     width: 100%;
   }
-
 .wwabook-20th-pages {
   background-color: #339966;
   color: white;
@@ -70,13 +121,12 @@
     background: url('wwabook_20th-pages.png') center 25% / cover;
     height: 360px;
   }
-</style>
-{{ end }}
 
-{{ define "head" }}
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@wwa_fansq">
-  <meta name="twitter:title" content="WWAの冒険書 20年の軌跡をQuickLoad!!">
-  <meta name="twitter:description" content="WWAの20周年を記念に執筆した同人誌です。WWA製作者様のインタビューや、今に至るまでの年表など、WWAの20年が詰まった一冊です。">
-  <meta name="twitter:image" content="wwa_20thbook.png">
-{{ end }}
+@media (max-width: 839px) {
+  .index-title__text .top-text__top {
+    font-size: 2.2rem;
+  }
+  .index-title__text .top-text__description {
+    font-size: 1rem;
+  }
+}

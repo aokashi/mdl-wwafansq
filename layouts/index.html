@@ -1,47 +1,3 @@
-{{ define "style" }}
-<style>
-.index-title {
-	background-color: #20c020;
-}
-.index-title__bg {
-	background: #20c020 url('./assets/index-title-section.png') no-repeat center top / cover;
-	height: 512px;
-}
-.index-title__text {
-	margin-top: -512px;
-}
-	.index-title__text .top-text {
-		display: inline-block;
-		margin: 96px 0;
-		padding: 1rem;
-		background: rgba(255, 255, 255, .875);
-	}
-		.index-title__text .top-text__top {
-			font-size: 3rem;
-			font-weight: bold;
-			margin: 2rem 0;
-		}
-		.index-title__text .top-text__description {
-			font-size: 1.2rem;
-			margin: 1rem 0;
-		}
-.index-playing {
-	background-color: #ffff99;
-}
-	.index-playing-section__list {
-		margin: 1rem 0;
-	}
-@media (max-width: 839px) {
-	.index-title__text .top-text__top {
-		font-size: 2.2rem;
-	}
-	.index-title__text .top-text__description {
-		font-size: 1rem;
-	}
-}
-</style>
-{{ end }}
-
 {{ define "main" }}
 <div class="index-title section">
 	<div class="index-title__bg"></div>
@@ -97,13 +53,13 @@
 		<div class="index-playing__list menu menu--wide">
 			<div class="menu__item menu__item--icon icon icon--wwajp">
 				<a class="icon__link" href="http://www.wwajp.com/">
-					<img class="icon__img" src="./assets/items-wwajp.png" alt="キャラバンサークル">
+					<img class="icon__img" src="assets/icon-wwajp.png" alt="キャラバンサークル">
 					<span class="icon__text">キャラバンサークル</span>
 				</a>
 			</div>
 			<div class="menu__item menu__item--icon icon icon--plicy">
 				<a class="icon__link" href="https://plicy.net/">
-					<img class="icon__img" src="./assets/items-plicy.png" alt="プリシー">
+					<img class="icon__img" src="assets/icon-plicy.png" alt="プリシー">
 					<span class="icon__text">プリシー</span>
 				</a>
 			</div>

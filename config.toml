@@ -25,3 +25,6 @@ hasCJKLaunguage = true
   name = "薄い本正誤表"
   url = "/eratta/"
   weight = 5
+
+[params]
+  siteCSS = "css/wwa_fansq.css"
