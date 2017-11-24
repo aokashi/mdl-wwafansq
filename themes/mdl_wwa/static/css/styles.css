@@ -91,7 +91,7 @@ body {
 @media (max-width: 1024px) {
   .header__title,
   .header__spacer,
-  .header-navigation-container {
+  .header__navigation-container {
     display: none;
   }
 
@@ -99,4 +99,12 @@ body {
     display: block;
     margin: 0 auto;
   }
+}
+
+/* Desktop */
+
+@media (min-width: 1025px) {
+	.header .mdl-layout__drawer-button {
+		display: none;
+	}
 }
