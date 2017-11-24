@@ -1,87 +1,102 @@
 @charset "utf-8";
 
 body {
-	background: #f0e0c0;
+  background: #f0e0c0;
 }
 
 .invisible {
-	visibility: hidden;
+  visibility: hidden;
 }
 
 .social-btn {
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
 }
 
 .social-btn--twitter {
-	background-image: url('social_twitter.png');
+  background-image: url('social_twitter.png');
 }
 
-.icon-menu {
-	display: flex;
-	flex-flow: row nowrap;
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.menu--wide {
+	overflow-x: auto;
+}
+  .menu__item--icon {
+    flex: 0 0 64px;
+    padding: 0 1rem;
+  }
+
+.icon__link {
+  color: inherit;
+}
+.icon__img {
+  display: block;
+  height: 80px;
+  margin: 0 2rem;
+}
+  
+.content-width {
+  margin: auto;
+  max-width: 1280px;
 }
 
-.icon-menu .icon-item {
-	flex: 0 0 64px;
-	padding: 0 1rem;
+.section.section--padding {
+  padding: 32px 0;
 }
-	.icon-menu .icon-item__link {
-		color: inherit;
+	.section__text {
+		padding: 1rem;
 	}
-	.icon-menu .icon-item__icon {
-		display: block;
-		height: 80px;
-		margin: 0 2rem;
+	.section__title {
+		padding: 0 1rem;
 	}
 
-/* .fansq */
-
-.fansq-max-width {
-	margin: auto;
-	max-width: 1280px;
+.logo-image {
+  height: 58px;
+  width: 320px;
 }
 
-.fansq-mobile-title {
-	display: none;
+/* .header */
+
+.header__title--mobile {
+  display: none;
 }
 
-.fansq-logo-image {
-	height: 58px;
-	width: 320px;
-}
+/* .card-container */
 
-.fansq-card-container .mdl-cell {
-	position: relative;
+.card-container--bottom-btn .mdl-cell {
+  position: relative;
 }
-.fansq-card-container .mdl-card__supporting-text {
-	padding-bottom: 56px;
+.card-container--bottom-btn .mdl-card__supporting-text {
+  padding-bottom: 56px;
 }
-.fansq-card-container .mdl-card__actions {
-	bottom: 0;
-	position: absolute;
+.card-container--bottom-btn .mdl-card__actions {
+  bottom: 0;
+  position: absolute;
 }
-.fansq-card-container .mdl-card__actions .mdl-button {
-	font-weight: bold;
+.card-container--bottom-btn .mdl-card__actions .mdl-button {
+  font-weight: bold;
 }
 
 .fansq-footer .mdl-mega-footer--right-section a .material-icons {
-	position: relative;
-	top: 6px;
+  position: relative;
+  top: 6px;
 }
 
 /* mobile */
 
 @media (max-width: 1024px) {
-	.fansq-title,
-	.fansq-header-spacer,
-	.fansq-navigation-container {
-		display: none;
-	}
+  .header__title,
+  .header__spacer,
+  .header-navigation-container {
+    display: none;
+  }
 
-	.fansq-mobile-title {
-		display: block;
-		margin: 0 auto;
-	}
+  .header__title--mobile {
+    display: block;
+    margin: 0 auto;
+  }
 }
