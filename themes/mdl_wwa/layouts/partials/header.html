@@ -6,8 +6,8 @@
       </a>
     </span>
     <div class="header__spacer mdl-layout-spacer"></div>
-    <div class="header-navigation-container">
-      <nav class="header-navigation mdl-navigation">
+    <div class="header__navigation-container">
+      <nav class="header__navigation mdl-navigation">
         {{ range .Site.Menus.main }}
         <a class="mdl-navigation__link" href="{{ .URL }}" title="{{ .Name }}">{{ .Name }}</a>
         {{ end }}
