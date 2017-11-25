@@ -63,8 +63,8 @@ body {
   }
 
 .logo-image {
-  height: 58px;
-  width: 320px;
+  height: auto;
+  max-width: 100%;
 }
 
 .date__text {

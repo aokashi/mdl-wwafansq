@@ -56,3 +56,9 @@ WWA FanSquareのWebサイトです。
   </div>
 </div>
 ```
+
+# 利用ファイル
+- [Material Design Lite](https://getmdl.io)
+- [キャラバンサークル](http://www.wwajp.com)
+- [雨宮慈雨](https://twitter.com/jiujiu1115) - WWAの冒険書のキャラクター画像
+- [プリシー](https://plicy.net/)
