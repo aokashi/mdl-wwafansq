@@ -6,6 +6,10 @@
       <div class="mdl-card__title">
         <h3 class="mdl-card__title-text"><a href="{{ .URL }}" title="{{ .Title }}">{{ .Title }}</a></h3>
       </div>
+      <div class="card__date date mdl-card__supporting-text mdl-card--border">
+        <span class="date__icon"><i class="material-icons md-16">event_note</i></span>
+        <span class="date__text"><time datetime="{{ .Date.Format "2016-01-02" }}">{{ .Date.Format "2006年 1月 2日" }}</time></span>
+      </div>
       <div class="mdl-card__supporting-text">
         <p>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
       </div>
