@@ -6,13 +6,13 @@ WWA FanSquareのWebサイトです。
 
 ページ独自の項目を指定したい場合は、以下の単語と重複しないように指定します。
 
-## 全ページ共通
-- `header` はヘッダーを定義します。
-- `main` は内容を定義します。
-- `footer` はフッターを定義します。
+- `fansq` はWWAFanSquareのページそのものを定義します。
+  - `fansq__header` でヘッダーを指定します。
+  - `fansq__main` で内容を指定します。
+  - `fansq__footer` でフッターを指定します。
 
 ## 汎用
-- `content-width` はコンテンツの最大幅を定義します
+- `content-width` はコンテンツの最大幅を定義します。
 - `menu` はメニューを定義します。
   - `menu--wide` で幅広くなります。
   - `menu__item` で項目一つを指定します。
@@ -29,10 +29,14 @@ WWA FanSquareのWebサイトです。
   - `section__title` でタイトルを指定します。
 - `top-text` は大きな空間に収められる大きなテキストボックスを定義します。
 - `logo-image` はタイトルのロゴを定義します。
+- `date` で日付を定義します。
+- `page-list` はページの一覧を定義します。
+  - `page-list__card` でページ一項目のカードを指定します。
 
 ## MDLと併用
 - `card-container` でカードを入れる要素を定義します。
   - `card-container--bottom-btn` でカード内のボタンが下部に配置されます。
+- `card` でカードを定義します。
 - `social-btn` は Material Design Lite に対応するソーシャルボタンを指定します。
   - `social-btn-container` で各項目を囲めます。
   - `social-btn--twitter` でTwitterのボタンになります。

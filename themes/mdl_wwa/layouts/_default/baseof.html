@@ -27,16 +27,16 @@
   <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
 </head>
 <body>
-  <div class="fansq mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <div class="fansq mdl-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button mdl-js-layout">
   {{ block "header" . }}
     {{ partial "header.html" . }}
   {{ end }}
-    <main class="mdl-layout__content">
+    <main class="fansq__main main mdl-layout__content">
       <a name="top"></a>
       {{ block "main" . }}
         {{ .Content }}
       {{ end }}
-      <footer class="footer mdl-mega-footer">
+      <footer class="fansq__footer footer mdl-mega-footer">
         <div class="content-width mdl-mega-footer--middle-section">
           <div class="mdl-mega-footer--left-section">
             <button class="mdl-mega-footer__social-btn social-btn social-btn--twitter" onclick="location.href='https://twitter.com/wwa_fansq'">
