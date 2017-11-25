@@ -53,6 +53,18 @@
 .about-fansq {
   background-color: #ccff99;
 }
+  .about-fansq__icon {
+    background: url('../wwa_fansq-icon_wide.png') center;
+    width: 252px;
+    height: 198px;
+    margin: 0 auto;
+  }
+  .about-fansq__icon .mdl-card__actions {
+    background-color: rgba(0, 0, 0, .5);
+  }
+  .about-fansq__icon-text {
+    color: #fff;
+  }
 
 .wwabook-20th-title {
   background: url('wwabook_20th-title-bg.png') center / cover;
