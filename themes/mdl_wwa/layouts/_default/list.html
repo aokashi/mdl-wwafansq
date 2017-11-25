@@ -1,5 +1,6 @@
 {{ define "main" }}
-<div class="content-width">
+<div class="section section--padding content-width">
+  <h2 class="section__title mdl-typography--display-1 mdl-typography--text-center">{{ .Title }}</h2>
   <div class="page-list mdl-card-container mdl-grid">
   {{ range .Data.Pages }}
     <div class="{{ .Section }}-{{ .File.BaseFileName }} page-list__card card mdl-card mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-color-text--grey-50 mdl-shadow-2dp">
