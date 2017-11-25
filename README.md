@@ -13,6 +13,7 @@ WWA FanSquareのWebサイトです。
 
 ## 汎用
 - `content-width` はコンテンツの最大幅を定義します。
+  - `content-width--text` でテキスト中心のページに適した幅にします。
 - `menu` はメニューを定義します。
   - `menu--wide` で幅広くなります。
   - `menu__item` で項目一つを指定します。
@@ -27,11 +28,16 @@ WWA FanSquareのWebサイトです。
 - `section` はページの1セクションを定義します。
   - `section--padding` で余白が上下に付きます。
   - `section__title` でタイトルを指定します。
+  - `section__description` で説明を指定します。
+  - `section__content` で内容を指定します(ただし内容が `card-container` の場合は指定する必要はありません)。
 - `top-text` は大きな空間に収められる大きなテキストボックスを定義します。
 - `logo-image` はタイトルのロゴを定義します。
 - `date` で日付を定義します。
+  - `date__text` で日付そのものを指定します。
 - `page-list` はページの一覧を定義します。
   - `page-list__card` でページ一項目のカードを指定します。
+- `topic` はトップページで目立つテキストを定義します。
+  - `topic__text` でテキストを指定します。
 
 ## MDLと併用
 - `card-container` でカードを入れる要素を定義します。

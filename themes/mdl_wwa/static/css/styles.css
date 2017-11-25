@@ -80,6 +80,14 @@ body {
     text-decoration: none;
   }
 
+.topic {
+  padding: 2rem 1rem;
+}
+  .topic__text {
+    display: block;
+    padding: 1rem;
+  }
+
 /* .card */
 
 .card.card--stand-alone {
