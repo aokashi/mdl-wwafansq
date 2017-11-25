@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 {{- with .Params -}}
 {{- if and (isset . "image") (isset . "description") }}
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@{{ $.Site.Params.twitter_id }}">
-  <meta name="twitter:title" content="{{ .title }}">
-  <meta name="twitter:description" content="{{ .description }}">
-  <meta name="twitter:image" content="{{ $.Site.BaseURL }}{{ .image }}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="{{ $.URL | absURL }}">
+  <meta property="og:title" content="{{ .title }}">
+  <meta property="og:description" content="{{ .description }}">
+  <meta property="og:image" content="{{ $.Site.BaseURL }}{{ .image }}">
 {{- end -}}
 {{- if isset . "description" }}
   <meta name="descrption" content="{{ .description }}">
