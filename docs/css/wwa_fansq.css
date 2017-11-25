@@ -68,9 +68,22 @@
 
 .wwabook-20th-title {
   background: url('wwabook_20th-title-bg.png') center / cover;
-  padding-top: 1rem;
+  padding: 1rem 0;
   position: relative;
 }
+  .wwabook-20th-title__char {
+    background: url('wwabook_20th-char.png') no-repeat left bottom;
+    background-size: auto 90%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 40%;
+  }
+  .wwabook-20th-title__logo,
+  .wwabook-20th-title__description {
+    margin: 0 1rem 0 auto;
+    width: 70%;
+  }
   .wwabook-20th-title__logo {
     text-align: center;
   }
@@ -80,8 +93,7 @@
     max-height: 192px;
   }
   .wwabook-20th-title__description {
-    background-color: #ffffc0;
-    margin: 16px auto;
+    background-color: rgba(255, 255, 153, .75);
     padding: 1rem;
   }
   .wwabook-20th-title__share {
@@ -89,6 +101,7 @@
   }
     .wwabook-20th-title__share .share-btn {
       display: inline-block;
+      vertical-align: middle;
     }
     .wwabook-20th-title__share .share-btn--facebook {
       overflow-x: hidden;
@@ -141,5 +154,14 @@
   }
   .index-title__text .top-text__description {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 759px) {
+  .wwabook-20th-title__char {
+    background-size: 100% auto;
+  }
+  .wwabook-20th-title__logo {
+    width: 100%;
   }
 }
