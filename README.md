@@ -19,6 +19,7 @@ WWA FanSquareのWebサイトです。
   - `menu__item` で項目一つを指定します。
     - `menu__item--icon` でアイコンの項目を指定します。
 - `icon` はテキスト付きのアイコンを定義します。
+  - `icon__img--rounded` で丸くなります。
   - `icon__img` でアイコンそのものを指定します。
   - `icon__title` でタイトルを指定します。
   - `icon__link` でリンクを指定します。

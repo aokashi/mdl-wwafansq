@@ -55,10 +55,10 @@
 	</div>
 	<div class="index-title__topic topic mdl-typography--title mdl-typography--text-center">
 		<span class="topic__text">
-			お待たせしました。WWA FanSquareは様々なコンテンツを加えてリニューアルしました。
+			WWAについて語ったり、メンバーと話したりできるDiscordのサーバーがあります！
 		</span>
-		<a class="topic__link mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/information/2017-new_wwafansq/">
-			<i class="material-icons md-16">keyboard_arrow_right</i> くわしく
+		<a class="topic__link mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://discord.gg/JD5KFyq">
+			<i class="material-icons md-16">person_add</i> 参加する！
 		</a>
 	</div>
 </div>
@@ -124,7 +124,7 @@
 		<div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet">
 			<h2 class="mdl-typography--title">お知らせ</h2>
 			<ul class="mdl-list menu">
-			{{ range where .Data.Pages.ByDate "Section" "information" }}
+			{{ range where .Data.Pages "Section" "information" }}
 				<li class="mdl-list__item menu__item">
 					<span class="mdl-list__item-primary-content"><a href="{{ .URL }}">{{ .Title }}</a></span>
 					<span class="mdl-list__item-secondary-content"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年 1月 2日" }}</time></span>
