@@ -1,4 +1,4 @@
-baseURL = "http://www.wwafansq.com/"
+baseURL = "https://www.wwafansq.com/"
 languageCode = "ja"
 title = "WWA FanSquare"
 theme = "mdl_wwa"
