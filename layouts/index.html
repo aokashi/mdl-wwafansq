@@ -1,4 +1,5 @@
 {{ define "main" }}
+
 <div class="index-title section">
 	<div class="index-title__bg"></div>
 	<div class="index-title__text mdl-typography--text-center">
@@ -62,6 +63,7 @@
 		</a>
 	</div>
 </div>
+
 <div class="index-playing section section--padding mdl-typography--text-center">
 	<div class="content-width">
 		<h2 class="section__title mdl-typography--display-1">
@@ -87,9 +89,10 @@
 		</div>
 	</div>
 </div>
+
 <div class="index-content section section--padding mdl-color--white">
 	<div class="content-width section__content mdl-grid">
-		<div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet ">
+		<div class="mdl-cell mdl-cell--4-col">
 			<h2 class="mdl-typography--title">
 				WWA関連リンク
 			</h2>
@@ -121,7 +124,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet">
+		<div class="mdl-cell mdl-cell--4-col">
 			<h2 class="mdl-typography--title">お知らせ</h2>
 			<ul class="mdl-list menu">
 			{{ range where .Data.Pages "Section" "information" }}
@@ -134,6 +137,10 @@
 					<span class="mdl-list__item-primary-content"><a href="/information/">もっと見る...</a></span>
 				</li>
 			</ul>
+		</div>
+		<div class="mdl-cell mdl-cell--4-col">
+			<h2 class="mdl-typography--title">Discord</h2>
+			<iframe src="https://discordapp.com/widget?id=400604468644937729&theme=dark" width="350" height="400" allowtransparency="true" frameborder="0"></iframe>
 		</div>
 	</div>
 </div>
