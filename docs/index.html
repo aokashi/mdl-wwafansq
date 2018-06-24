@@ -1,4 +1,70 @@
-{{ define "main" }}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta name="generator" content="Hugo 0.30" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="stylesheet" href="http://www.wwafansq.com/css/material.min.css">
+  <link rel="stylesheet" href="http://www.wwafansq.com/css/styles.css">
+  <link rel="stylesheet" href="http://www.wwafansq.com/css/wwa_fansq.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="icon" type="image/png" href="http://www.wwafansq.com/wwa_fansq-icon.png">
+  <script src="http://www.wwafansq.com/js/material.min.js"></script>
+  <title>WWA FanSquare</title>
+</head>
+<body>
+  <div class="fansq mdl-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button mdl-js-layout">
+  
+    <header class="fansq__header header mdl-layout__header mdl-shadow--4dp">
+  <div class="mdl-layout__header-row">
+    <span class="header__title mdl-layout-title">
+      <a class="header__title-link" href="http://www.wwafansq.com/" title="WWA FanSquare">
+        <img class="logo-image" alt="WWA FanSquare" src="http://www.wwafansq.com/wwa_fansq-logo.png">
+      </a>
+    </span>
+    <div class="header__spacer mdl-layout-spacer"></div>
+    <div class="header__navigation-container">
+      <nav class="header__navigation mdl-navigation">
+        
+        <a class="mdl-navigation__link" href="/about/" title="WWAを知る">WWAを知る</a>
+        
+        <a class="mdl-navigation__link" href="/works/" title="作品">作品</a>
+        
+        <a class="mdl-navigation__link" href="https://wwacontest.aruneko.net/" title="コンテスト">コンテスト</a>
+        
+        <a class="mdl-navigation__link" href="/information/" title="お知らせ">お知らせ</a>
+        
+        <a class="mdl-navigation__link" href="/eratta/" title="薄い本正誤表">薄い本正誤表</a>
+        
+      </nav>
+    </div>
+    <span class="header__title header__title--mobile mdl-layout-title">
+      <a class="header__title-link" href="http://www.wwafansq.com/" title="WWA FanSquare">
+        <img class="logo-image" alt="WWA FanSquare" src="http://www.wwafansq.com/wwa_fansq-logo.png">
+      </a>
+    </span>
+  </div>
+</header>
+<div class="mdl-layout__drawer">
+  <span class="mdl-layout-title">Menu</span>
+  <nav class="mdl-navigation">
+  
+    <a class="mdl-navigation__link" href="/about/" title="WWAを知る">WWAを知る</a>
+  
+    <a class="mdl-navigation__link" href="/works/" title="作品">作品</a>
+  
+    <a class="mdl-navigation__link" href="https://wwacontest.aruneko.net/" title="コンテスト">コンテスト</a>
+  
+    <a class="mdl-navigation__link" href="/information/" title="お知らせ">お知らせ</a>
+  
+    <a class="mdl-navigation__link" href="/eratta/" title="薄い本正誤表">薄い本正誤表</a>
+  
+  </nav>
+</div>
+  
+    <main class="fansq__main main mdl-layout__content">
+      <a name="top"></a>
+      
 <div class="index-title section">
 	<div class="index-title__bg"></div>
 	<div class="index-title__text mdl-typography--text-center">
@@ -40,7 +106,7 @@
 				</div>
 				<div class="mdl-card__supporting-text">
 					<p>WWAの20年を記念に執筆した同人誌です。</p>
-					<p>PDF形式で販売中！</p>
+					<p>電子版、物理本共に販売中！</p>
 				</div>
 				<div class="mdl-card__actions mdl-card--border">
 					<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/works/wwabook_20th/">
@@ -55,10 +121,10 @@
 	</div>
 	<div class="index-title__topic topic mdl-typography--title mdl-typography--text-center">
 		<span class="topic__text">
-			WWAについて語ったり、メンバーと話したりできるDiscordのサーバーがあります！
+			お待たせしました。WWA FanSquareは様々なコンテンツを加えてリニューアルしました。
 		</span>
-		<a class="topic__link mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://discord.gg/JD5KFyq">
-			<i class="material-icons md-16">person_add</i> 参加する！
+		<a class="topic__link mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/information/2017-new_wwafansq/">
+			<i class="material-icons md-16">keyboard_arrow_right</i> くわしく
 		</a>
 	</div>
 </div>
@@ -124,12 +190,12 @@
 		<div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet">
 			<h2 class="mdl-typography--title">お知らせ</h2>
 			<ul class="mdl-list menu">
-			{{ range where .Data.Pages "Section" "information" }}
+			
 				<li class="mdl-list__item menu__item">
-					<span class="mdl-list__item-primary-content"><a href="{{ .URL }}">{{ .Title }}</a></span>
-					<span class="mdl-list__item-secondary-content"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006年 1月 2日" }}</time></span>
+					<span class="mdl-list__item-primary-content"><a href="/information/2017-new_wwafansq/">WWA FanSquareを開設しました</a></span>
+					<span class="mdl-list__item-secondary-content"><time datetime="2017-11-25">2017年 11月 25日</time></span>
 				</li>
-			{{ end }}
+			
 				<li class="mdl-list__item menu__item">
 					<span class="mdl-list__item-primary-content"><a href="/information/">もっと見る...</a></span>
 				</li>
@@ -137,9 +203,22 @@
 		</div>
 	</div>
 </div>
-{{ end }}
 
-{{ define "footer" }}
+      <footer class="fansq__footer footer mdl-mega-footer">
+        <div class="content-width mdl-mega-footer--middle-section">
+          <div class="mdl-mega-footer--left-section">
+            <button class="mdl-mega-footer__social-btn social-btn social-btn--twitter" onclick="location.href='https://twitter.com/wwa_fansq'">
+              <span class="invisible">Twitter</span>
+            </button>
+          </div>
+          <div class="mdl-mega-footer--right-section">
+            <a href="#top">
+              トップへ戻る
+              <i class="material-icons">expand_less</i>
+            </a>
+          </div>
+        </div>
+      
 <div class="content-width mdl-mega-footer--bottom-section">
 	<p>
 		<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br>
@@ -149,4 +228,8 @@
 	<p>Internet RPG "<a href="http://wwajp.com">World Wide Adventure</a>" © 1996-2017 NAO</p>
 	<p>"WWA FanSquare" © 2017 WWA FanSquare</p>
 </div>
-{{ end }}
+
+    </main>
+  </div>
+</body>
+</html>

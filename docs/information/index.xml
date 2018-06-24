@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Information on WWA FanSquare</title>
+    <link>http://www.wwafansq.com/information/</link>
+    <description>Recent content in Information on WWA FanSquare</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 25 Nov 2017 01:06:03 +0900</lastBuildDate>
+    
+	<atom:link href="http://www.wwafansq.com/information/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>WWA FanSquareを開設しました</title>
+      <link>http://www.wwafansq.com/information/2017-new_wwafansq/</link>
+      <pubDate>Sat, 25 Nov 2017 01:06:03 +0900</pubDate>
+      
+      <guid>http://www.wwafansq.com/information/2017-new_wwafansq/</guid>
+      <description> WWAユーザーの情報提供の場 WWA FanSquare は今まで仮のWebページで構成されていましたが、WWA作品の投稿ユーザーの増加が進んでいる今、新しくコンテンツを増やして開設しました！
+WWAユーザー間との情報共有の他、WWAをより多くの方に知ってもらうことを目的に進めてまいります。よろしくお願いします。
+主な変更点  WWAの薄い本のページを追加しました。「作品」からご覧になれます。 お知らせのコンテンツを開設しました。今後はおすすめのWWA作品をまとめて広報するつもりです。 WWAを知らない方にも知ってもらえるように、「WWAを知る」の項目を追加しました。  </description>
+    </item>
+    
+  </channel>
+</rss>

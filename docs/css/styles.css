@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+body {
+  background: #f0e0c0;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.social-btn {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+}
+
+.social-btn--twitter {
+  background-image: url('social_twitter.png');
+}
+
+.menu--wide {
+  display: flex;
+  flex-flow: row nowrap;
+	overflow-x: auto;
+}
+  .menu a {
+    color: inherit;
+  }
+  .menu__item--icon {
+    flex: 0 1 auto;
+    padding: 0 1rem;
+  }
+
+.icon__img {
+  display: block;
+  height: 80px;
+  margin: 0 2rem;
+}
+  
+.content-width {
+  margin: auto;
+  max-width: 1280px;
+}
+.content-width.content-width--text {
+  max-width: 1024px;
+}
+
+.section.section--padding {
+  padding: 32px 0;
+}
+	.section__text {
+		padding: 1rem;
+  }
+  .section__text.section__text--title-only {
+    padding: 0 1rem;
+  }
+  .section__content,
+  .section__description {
+    padding: 0 1rem;
+  }
+  .section__date {
+    padding-bottom: 1rem;
+  }
+
+.logo-image {
+  height: auto;
+  max-width: 100%;
+}
+
+.date__text {
+  vertical-align: top;
+}
+
+.page-list__card .mdl-card__title {
+  background-color: #666666;
+  color: #ffffff;
+}
+  .page-list__card .mdl-card__title a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+.topic {
+  padding: 2rem 1rem;
+}
+  .topic__text {
+    display: block;
+    padding: 1rem;
+  }
+
+/* .card */
+
+.card.card--stand-alone {
+  margin: 48px;
+  padding: 24px 16px;
+}
+.card__date {
+  font-size: 16px;
+}
+
+/* .card-container */
+
+.card-container--bottom-btn .mdl-cell {
+  position: relative;
+}
+.card-container--bottom-btn .mdl-card__supporting-text {
+  padding-bottom: 56px;
+}
+.card-container--bottom-btn .mdl-card__actions {
+  bottom: 0;
+  position: absolute;
+}
+.card-container--bottom-btn .mdl-card__actions .mdl-button {
+  font-weight: bold;
+}
+
+.fansq-footer .mdl-mega-footer--right-section a .material-icons {
+  position: relative;
+  top: 6px;
+}
+
+/* mobile */
+
+@media (max-width: 1024px) {
+  .fansq__header .header__title,
+  .fansq__header .header__spacer,
+  .fansq__header .header__navigation-container {
+    display: none;
+  }
+  .fansq__header .header__title--mobile {
+    display: block;
+    margin: 0 auto;
+  }
+  .card.card--stand-alone {
+    margin: 48px 16px;
+  }
+}
+
+/* Desktop */
+
+@media (min-width: 1025px) {
+  .fansq__header .header__title--mobile {
+    display: none;
+  }
+}
