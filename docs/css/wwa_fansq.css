@@ -28,7 +28,14 @@
 }
 	.index-playing-section__list {
 		margin: 1rem 0;
-	}
+  }
+.index-community {
+  background-color: #99AAB5;
+}
+  .index-community .mdl-button {
+    background-color: #7289DA;
+    color: #ffffff;
+  }
 
 .about-wwa {
   background-color: #ffff99;
