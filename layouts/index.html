@@ -1,4 +1,5 @@
 {{ define "main" }}
+
 <div class="index-title section">
 	<div class="index-title__bg"></div>
 	<div class="index-title__text mdl-typography--text-center">
@@ -55,13 +56,14 @@
 	</div>
 	<div class="index-title__topic topic mdl-typography--title mdl-typography--text-center">
 		<span class="topic__text">
-			WWAについて語ったり、メンバーと話したりできるDiscordのサーバーがあります！
+			WWAコンテスト 2018 作品投票開始！ (<time datetime="2018-10-28">10/28</time> まで)
 		</span>
-		<a class="topic__link mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://discord.gg/JD5KFyq">
-			<i class="material-icons md-16">person_add</i> 参加する！
+		<a class="topic__link mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://wwacontest.aruneko.net">
+			<i class="material-icons md-16">how_to_vote</i> コンテストにアクセス！
 		</a>
 	</div>
 </div>
+
 <div class="index-playing section section--padding mdl-typography--text-center">
 	<div class="content-width">
 		<h2 class="section__title mdl-typography--display-1">
@@ -87,41 +89,42 @@
 		</div>
 	</div>
 </div>
+
 <div class="index-content section section--padding mdl-color--white">
 	<div class="content-width section__content mdl-grid">
-		<div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet ">
+		<div class="mdl-cell mdl-cell--4-col">
 			<h2 class="mdl-typography--title">
 				WWA関連リンク
 			</h2>
 			<ul class="mdl-list menu">
-				<li class="mdl-list__item mdl-list__item--two-line menu__item">
+				<li class="mdl-list__item mdl-list__item--three-line menu__item">
 					<span class="mdl-list__item-primary-content">
 						<span><a href="http://www.wwajp.com">キャラバンサークル</a></span>
-						<span class="mdl-list__item-sub-title">
+						<span class="mdl-list__item-text-body">
 							WWAの原作者のサイトです。
 						</span>
 					</span>
 				</li>
-				<li class="mdl-list__item mdl-list__item--two-line menu__item">
+				<li class="mdl-list__item mdl-list__item--three-line menu__item">
 					<span class="mdl-list__item-primary-content">
 						<span><a href="http://wwawing.com">WWA Wing</a></span>
-						<span class="mdl-list__item-sub-title">
+						<span class="mdl-list__item-text-body">
 							WWAをJavaアプレットからJavaScriptに移植したWWA Wingのサイトです。<br>
 							今後のWWAに向けて開発したい方はぜひご協力を！
 						</span>
 					</span>
 				</li>
-				<li class="mdl-list__item mdl-list__item--two-line menu__item">
+				<li class="mdl-list__item mdl-list__item--three-line menu__item">
 					<span class="mdl-list__item-primary-content">
 						<span><a href="https://www.aokashi.net">Aokashi Home</a></span>
-						<span class="mdl-list__item-sub-title">
+						<span class="mdl-list__item-text-body">
 							代表のWebページです。こちらも、WWA作品とWWA素材がご利用になれます。
 						</span>
 					</span>
 				</li>
 			</ul>
 		</div>
-		<div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet">
+		<div class="mdl-cell mdl-cell--4-col">
 			<h2 class="mdl-typography--title">お知らせ</h2>
 			<ul class="mdl-list menu">
 			{{ range where .Data.Pages "Section" "information" }}
@@ -131,10 +134,27 @@
 				</li>
 			{{ end }}
 				<li class="mdl-list__item menu__item">
-					<span class="mdl-list__item-primary-content"><a href="/information/">もっと見る...</a></span>
+					<span class="mdl-list__item-primary-content"><a class="mdl-button" href="/information/">もっと見る...</a></span>
 				</li>
 			</ul>
 		</div>
+		<div class="mdl-cell mdl-cell--4-col">
+			<h2 class="mdl-typography--title">ツイート一覧</h2>
+			<a class="twitter-timeline" data-lang="ja" data-height="400" data-link-color="#E95F28" href="https://twitter.com/wwa_fansq?ref_src=twsrc%5Etfw">Tweets by wwa_fansq</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>
+	</div>
+</div>
+
+<div class="index-community section section--padding mdl-typography--text-center">
+	<div class="content-width">
+		<h2 class="section__title mdl-typography--display-1">
+			Discord のご案内
+		</h2>
+		<p>WWAについて語りたいですか？ WWA FanSquareではDiscordでWWAコミュニティを用意しています！</p>
+		<p>ご意見もお待ちしております。</p>
+		<a class="topic__link mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect" href="https://discord.gg/JD5KFyq">
+			<i class="material-icons md-16">person_add</i> 参加する！
+		</a>
 	</div>
 </div>
 {{ end }}
