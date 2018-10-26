@@ -2,7 +2,7 @@ baseURL = "https://www.wwafansq.com/"
 languageCode = "ja"
 title = "WWA FanSquare"
 theme = "mdl_wwa"
-publishDir = "docs"
+publishDir = "public"
 hasCJKLaunguage = true
 
 [[menu.main]]
