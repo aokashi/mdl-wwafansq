@@ -29,13 +29,17 @@ body {
   .menu__item--icon {
     flex: 0 1 auto;
     padding: 0 1rem;
+    text-align: center;
   }
-
+  
 .icon__img {
   display: block;
   height: 80px;
-  margin: 0 2rem;
+  margin: 0 auto;
 }
+  .icon__img--rounded {
+    border-radius: 40px;
+  }
   
 .content-width {
   margin: auto;

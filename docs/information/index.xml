@@ -2,21 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Information on WWA FanSquare</title>
-    <link>http://www.wwafansq.com/information/</link>
+    <link>https://www.wwafansq.com/information/</link>
     <description>Recent content in Information on WWA FanSquare</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 25 Nov 2017 01:06:03 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 12 Jun 2018 12:21:21 +0900</lastBuildDate>
     
-	<atom:link href="http://www.wwafansq.com/information/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.wwafansq.com/information/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>WWAの冒険書 20年の軌跡をQuick Load!! のBOOTH販売を終了しました</title>
+      <link>https://www.wwafansq.com/information/2018-wwabook_20th_finished_booth/</link>
+      <pubDate>Tue, 12 Jun 2018 12:21:21 +0900</pubDate>
+      
+      <guid>https://www.wwafansq.com/information/2018-wwabook_20th_finished_booth/</guid>
+      <description> 2017年5月から販売を開始していましたBOOTHでの物理本販売は、販売分が完売したため、終了いたしました。
+なお、DLSiteによるPDF形式での電子版は引き続き販売しております。これからは、こちらをご利用ください。
+物理本の追加販売は現在未定です。皆さんご購入いただき、ありがとうございました！
+リンク  WWAの冒険書 - 20年の軌跡をQuick Load!!  </description>
+    </item>
+    
+    <item>
+      <title>HTTPS 接続に対応しました</title>
+      <link>https://www.wwafansq.com/information/2018-support_https/</link>
+      <pubDate>Wed, 09 May 2018 00:17:03 +0900</pubDate>
+      
+      <guid>https://www.wwafansq.com/information/2018-support_https/</guid>
+      <description> WWA FanSquare のWebサイトをHTTPS接続に対応しました。
+WWA FanSquare のWebサイトはGitHub Pagesで公開しています。2018年5月より、GitHub Pagesの独自ドメインがHTTPS接続に対応したことにあわせて、当サイトも対応することになりました。
+これからもよろしくお願いします。
+リンク  WWA FanSquare のWebページのリポジトリ Custom domains on GitHub Pages gain support for HTTPS | The GitHub Blog  </description>
+    </item>
+    
+    <item>
+      <title>Twitterアカウントが複数人運営になりました</title>
+      <link>https://www.wwafansq.com/information/2018-team_twitter/</link>
+      <pubDate>Sat, 03 Feb 2018 00:00:00 +0900</pubDate>
+      
+      <guid>https://www.wwafansq.com/information/2018-team_twitter/</guid>
+      <description>これまでのTwitterアカウントは私(Aokashi @aokashi)のみの運営でしたが、本日より以下のメンバーが加わりました。
+ ひらりん(@hirarira617) あるねこ(@aruneko99) mora(@mora_jnr117) 雨宮慈雨(@jiujiu1115)  WWAコンテスト2018の開催も近いため、多くの方にWWAコンテストに参加していただけるように、より一層宣伝活動を強化していきます。
+また、メンバー間の会話で普段利用しているDiscordも誰でも利用できるように解放しました。WWA FanSquareは設立してからまだ半年程しか経っていないため、知らないところもあると思います。
+person_add Discordに参加する！ warning Discordの招待リンクは今後変更する場合があります。  Twitterと併せて、Discordも是非ご利用ください。
+皆さんよろしくお願いします！</description>
+    </item>
+    
+    <item>
       <title>WWA FanSquareを開設しました</title>
-      <link>http://www.wwafansq.com/information/2017-new_wwafansq/</link>
+      <link>https://www.wwafansq.com/information/2017-new_wwafansq/</link>
       <pubDate>Sat, 25 Nov 2017 01:06:03 +0900</pubDate>
       
-      <guid>http://www.wwafansq.com/information/2017-new_wwafansq/</guid>
+      <guid>https://www.wwafansq.com/information/2017-new_wwafansq/</guid>
       <description> WWAユーザーの情報提供の場 WWA FanSquare は今まで仮のWebページで構成されていましたが、WWA作品の投稿ユーザーの増加が進んでいる今、新しくコンテンツを増やして開設しました！
 WWAユーザー間との情報共有の他、WWAをより多くの方に知ってもらうことを目的に進めてまいります。よろしくお願いします。
 主な変更点  WWAの薄い本のページを追加しました。「作品」からご覧になれます。 お知らせのコンテンツを開設しました。今後はおすすめのWWA作品をまとめて広報するつもりです。 WWAを知らない方にも知ってもらえるように、「WWAを知る」の項目を追加しました。  </description>
