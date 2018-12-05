@@ -16,6 +16,6 @@ image: "assets/information/2018-wwa-collection.png"
 今作のWebページは現在制作中です。冬休みの機会に、是非お買い求めください。
 
 ### 参考
-- WWA ... ユーザーが自由に作品を遊んだり作成したりできるRPGシステム。詳細は当サイトの[WWAを知る](/about)をご参照ください。
+- WWA(World Wide Adventure) ... ユーザーが自由に作品を遊んだり作成したりできるRPGシステム。詳細は当サイトの[WWAを知る](/about)をご参照ください。
 - [PLiCy](https://plicy.net) ... PCやスマートフォンでゲーム作品を公開、共有できるWebサービス。今作の開発はPLiCyが行っております。
 - [WWA Wing](https://wwawing.com) ... WWAのシステムを昔のPCで使われていたJavaアプレットから、今のPCやスマートフォンで動作できるJavaScript(Canvas2D)にて移植を行ったシステム。今作のWWAのシステムにはWWA Wingが採用されています。
