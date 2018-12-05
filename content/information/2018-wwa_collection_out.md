@@ -11,7 +11,7 @@ image: "assets/information/2018-wwa-collection.png"
 
 当作品の特徴につきましては、<a href="https://plicy.net/NewsRelease/2018.12.06">PLiCyのプレス記事</a>をご参照ください。
 
-本日<strong><time datetime="2018-12-06">2018年12月6日</time></strong>より予約を開始。発売は<strong><time datetime="2018-12-20">2018年12月20日</time></strong>になります。
+本日<strong><time datetime="2018-12-06">2018年12月6日(木)</time></strong>より予約を開始。発売は<strong><time datetime="2018-12-20">2018年12月20日(木)</time></strong>になります。
 
 今作のWebページは現在制作中です。冬休みの機会に、是非お買い求めください。
 
