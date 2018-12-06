@@ -101,6 +101,10 @@ body {
 .card__date {
   font-size: 16px;
 }
+.card__image {
+  width: 100%;
+  height: auto;
+}
 
 /* .card-container */
 
