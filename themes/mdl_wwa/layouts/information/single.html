@@ -4,6 +4,11 @@
     <div class="mdl-card__title">
       <h2 class="mdl-card__title-text">{{ .Title }}</h2>
     </div>
+    {{ with .Params.image }}
+    <div class="mdl-card__media">
+      <img class="card__image" src="{{ $.Site.BaseURL }}{{ . }}">
+    </div>
+    {{ end }}
     {{ partial "date.html" . }}
     <div class="card__cotent mdl-card__supporting-text">
 {{ .Content }}
