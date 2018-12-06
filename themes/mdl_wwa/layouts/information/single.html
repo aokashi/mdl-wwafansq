@@ -6,7 +6,7 @@
     </div>
     {{ with .Params.image }}
     <div class="mdl-card__media">
-      <img class="card__image" src="{{ $.Site.BaseURL }}{{ . }}">
+      <img class="card__image" src="{{ $.Site.BaseURL }}{{ . }}" alt="">
     </div>
     {{ end }}
     {{ partial "date.html" . }}
