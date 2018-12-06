@@ -2,7 +2,7 @@
 title: "Nintendo Switchソフト「WWA COLLECTION」の発売が決まりました！"
 date: 2018-12-06T01:20:00+09:00
 
-image: "assets/information/2018-wwa-collection.png"
+image: "assets/information/2018-wwa_collection.png"
 ---
 
 1996年に開発された<a href="http://www.wwajp.com">キャラバンサークル</a>のWWAの作品45作を収録したゲームソフト<strong>「WWA COLLECTION」</strong>の発売が決定しました。
