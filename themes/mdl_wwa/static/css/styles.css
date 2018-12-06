@@ -138,6 +138,7 @@ body {
   .fansq__header .header__title--mobile {
     display: block;
     margin: 0 auto;
+    width: 100%;
   }
   .card.card--stand-alone {
     margin: 48px 16px;
