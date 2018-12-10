@@ -61,3 +61,4 @@ WWA FanSquareのWebサイトで使われているテーマ「mdl-wwafansq」で�
 ## 利用ファイル
 - [Material Design Lite](https://getmdl.io)
 - [キャラバンサークル](http://www.wwajp.com)
+- [Twitter(ブランドリソース)](https://about.twitter.com/ja/company/brand-resources.html)
