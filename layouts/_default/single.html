@@ -1,3 +1,9 @@
+{{ define "head" }}
+    {{ if isset .Params "additonal_script" }}
+        <script src="{{ .Site.BaseURL }}{{ .Params.additonal_script }}"></script>
+    {{ end }}
+{{ end }}
+
 {{ define "main" }}
 {{ .Content }}
 {{ end }}
