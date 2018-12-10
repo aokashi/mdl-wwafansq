@@ -1,5 +1,7 @@
 # mdl-wwafansq
-WWA FanSquareのWebサイトで使われているテーマ「mdl-wwafansq」です。
+**このリポジトリは WWA FanSquare のWebサイトから WWA FanSquare 用のHugoテーマになりました。**
+
+WWA FanSquareのWebサイトで使われているHugoのテーマ「mdl-wwafansq」です。
 
 ## クラス名について
 クラス名の命名規則はBEMを利用しています。
@@ -60,5 +62,6 @@ WWA FanSquareのWebサイトで使われているテーマ「mdl-wwafansq」で�
 
 ## 利用ファイル
 - [Material Design Lite](https://getmdl.io)
+- [Hugo](https://gohugo.io)
 - [キャラバンサークル](http://www.wwajp.com)
 - [Twitter(ブランドリソース)](https://about.twitter.com/ja/company/brand-resources.html)
