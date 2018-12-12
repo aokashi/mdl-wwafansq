@@ -63,5 +63,6 @@ WWA FanSquareのWebサイトで使われているHugoのテーマ「mdl-wwafansq
 ## 利用ファイル
 - [Material Design Lite](https://getmdl.io)
 - [Hugo](https://gohugo.io)
+- [Swiper](https://idangero.us/swiper/)
 - [キャラバンサークル](http://www.wwajp.com)
 - [Twitter(ブランドリソース)](https://about.twitter.com/ja/company/brand-resources.html)

@@ -31,7 +31,7 @@
   {{ block "header" . }}
     {{ partial "header.html" . }}
   {{ end }}
-    <main class="fansq__main main mdl-layout__content">
+    <main class="fansq__main main {{ .Section }}-{{ .File.BaseFileName }} mdl-layout__content">
       <a name="top"></a>
       {{ block "main" . }}
         {{ .Content }}
