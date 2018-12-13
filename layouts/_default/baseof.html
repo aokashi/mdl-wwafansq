@@ -32,7 +32,7 @@
     {{ partial "header.html" . }}
   {{ end }}
     <main class="fansq__main main {{ .Section }}-{{ .File.BaseFileName }} mdl-layout__content">
-      <a name="top"></a>
+      <a id="top"></a>
       {{ block "main" . }}
         {{ .Content }}
       {{ end }}
@@ -50,9 +50,10 @@
             </a>
           </div>
         </div>
-      {{ block "footer" . }}
-        {{ partial "footer.html" . }}
-      {{ end }}
+        {{ block "footer" . }}
+          {{ partial "footer.html" . }}
+        {{ end }}
+      </footer>
     </main>
   </div>
 </body>
