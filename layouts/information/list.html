@@ -1,18 +1,18 @@
 {{ define "main" }}
 <div class="section section--padding content-width">
-  <h2 class="section__title mdl-typography--display-1 mdl-typography--text-center">{{ .Title }}</h2>
-  <div class="page-list mdl-card-container mdl-grid">
-  {{ range .Data.Pages }}
+    <h2 class="section__title mdl-typography--display-1 mdl-typography--text-center">{{ .Title }}</h2>
+    <div class="page-list mdl-card-container mdl-grid">
+    {{ range .Data.Pages }}
     <div class="{{ .Section }}-{{ .File.BaseFileName }} page-list__card card mdl-card mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-color-text--grey-50 mdl-shadow-2dp">
-      <div class="mdl-card__title">
-        <h3 class="mdl-card__title-text"><a href="{{ .URL }}" title="{{ .Title }}">{{ .Title }}</a></h3>
-      </div>
-      {{ partial "date.html" . }}
-      <div class="mdl-card__supporting-text">
-        <p>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
-      </div>
+        <div class="mdl-card__title">
+            <h3 class="mdl-card__title-text"><a href="{{ .URL }}" title="{{ .Title }}">{{ .Title }}</a></h3>
+        </div>
+        {{ partial "date.html" . }}
+        <div class="mdl-card__supporting-text">
+            <p>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
+        </div>
     </div>
-  {{ end }}
-  </div>
+    {{ end }}
+    </div>
 </div>
 {{ end }}
