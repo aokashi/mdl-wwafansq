@@ -53,10 +53,10 @@ WWA FanSquareのWebサイトで使われているHugoのテーマ「mdl-wwafansq
 ### 使用例
 ```html
 <div class="about-wwa section">
-  <h2 class="section__title">WWAについて</h2>
-  <div class="section__content">
-    ...
-  </div>
+    <h2 class="section__title">WWAについて</h2>
+    <div class="section__content">
+        ...
+    </div>
 </div>
 ```
 

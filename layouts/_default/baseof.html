@@ -28,33 +28,33 @@
 </head>
 <body>
     <div class="fansq mdl-layout mdl-layout--fixed-header mdl-layout--no-desktop-drawer-button mdl-js-layout">
-    {{ block "header" . }}
-        {{ partial "header.html" . }}
-    {{ end }}
-    <main class="fansq__main main {{ .Section }}-{{ .File.BaseFileName }} mdl-layout__content">
-        <a id="top"></a>
-        {{ block "main" . }}
-            {{ .Content }}
+        {{ block "header" . }}
+            {{ partial "header.html" . }}
         {{ end }}
-        <footer class="fansq__footer footer mdl-mega-footer">
-            <div class="content-width mdl-mega-footer--middle-section">
-                <div class="mdl-mega-footer--left-section">
-                    <button class="mdl-mega-footer__social-btn social-btn social-btn--twitter" onclick="location.href='https://twitter.com/wwa_fansq'">
-                        <span class="invisible">Twitter</span>
-                    </button>
-                </div>
-                <div class="mdl-mega-footer--right-section">
-                    <a href="#top">
-                        トップへ戻る
-                        <i class="material-icons">expand_less</i>
-                    </a>
-                </div>
-            </div>
-            {{ block "footer" . }}
-                {{ partial "footer.html" . }}
+        <main class="fansq__main main {{ .Section }}-{{ .File.BaseFileName }} mdl-layout__content">
+            <a id="top"></a>
+            {{ block "main" . }}
+                {{ .Content }}
             {{ end }}
-        </footer>
-    </main>
-  </div>
+            <footer class="fansq__footer footer mdl-mega-footer">
+                <div class="content-width mdl-mega-footer--middle-section">
+                    <div class="mdl-mega-footer--left-section">
+                        <button class="mdl-mega-footer__social-btn social-btn social-btn--twitter" onclick="location.href='https://twitter.com/wwa_fansq'">
+                            <span class="invisible">Twitter</span>
+                        </button>
+                    </div>
+                    <div class="mdl-mega-footer--right-section">
+                        <a href="#top">
+                            トップへ戻る
+                            <i class="material-icons">expand_less</i>
+                        </a>
+                    </div>
+                </div>
+                {{ block "footer" . }}
+                    {{ partial "footer.html" . }}
+                {{ end }}
+            </footer>
+        </main>
+    </div>
 </body>
 </html>
