@@ -1,0 +1,23 @@
+{{ define "head" }}
+    <meta name="robots" content="noindex">
+{{ end }}
+
+{{ define "main" }}
+<div class="section section--padding content-width mdl-grid">
+    <div class="not-found-card card card--stand-alone mdl-card mdl-cell mdl-cell--12-col mdl-shadow--4dp">
+        <div class="mdl-card__title">
+            <h1 class="mdl-card__title-text">ページが見つかりません</h1>
+        </div>
+        <div class="mdl-card__supporting-text">
+            <p>お探しのページは見つかりませんでした。</p>
+            <p><a href="/" title="{{ .Site.Title }}">トップページ</a>から探したりして目的のページを見つけてください。</p>
+            <p>他サイトからのリンクでこのページに辿り着いた場合は、ページ整理をしていた当サイトの問題です。ごめんなさい。</p>
+        </div>
+        <div class="mdl-card__action">
+            <a class="mdl-button mdl-button--colored" href="/">
+                <i class="material-icons">arrow_back</i> トップページに戻る
+            </a>
+        </div>
+    </div>
+</div>
+{{ end }}
