@@ -1,7 +1,9 @@
-# WWA FanSquare Webサイト
-WWA FanSquareのWebサイトです。
+# mdl-wwafansq
+**このリポジトリは WWA FanSquare のWebサイトから WWA FanSquare 用のHugoテーマになりました。**
 
-# クラス名について
+WWA FanSquareのWebサイトで使われているHugoのテーマ「mdl-wwafansq」です。
+
+## クラス名について
 クラス名の命名規則はBEMを利用しています。
 
 ページ独自の項目を指定したい場合は、以下の単語と重複しないように指定します。
@@ -11,7 +13,7 @@ WWA FanSquareのWebサイトです。
   - `fansq__main` で内容を指定します。
   - `fansq__footer` でフッターを指定します。
 
-## 汎用
+### 汎用
 - `content-width` はコンテンツの最大幅を定義します。
   - `content-width--text` でテキスト中心のページに適した幅にします。
 - `menu` はメニューを定義します。
@@ -40,7 +42,7 @@ WWA FanSquareのWebサイトです。
 - `topic` はトップページで目立つテキストを定義します。
   - `topic__text` でテキストを指定します。
 
-## MDLと併用
+### MDLと併用
 - `card-container` でカードを入れる要素を定義します。
   - `card-container--bottom-btn` でカード内のボタンが下部に配置されます。
 - `card` でカードを定義します。
@@ -48,18 +50,19 @@ WWA FanSquareのWebサイトです。
   - `social-btn-container` で各項目を囲めます。
   - `social-btn--twitter` でTwitterのボタンになります。
 
-## 使用例
+### 使用例
 ```html
 <div class="about-wwa section">
-  <h2 class="section__title">WWAについて</h2>
-  <div class="section__content">
-    ...
-  </div>
+    <h2 class="section__title">WWAについて</h2>
+    <div class="section__content">
+        ...
+    </div>
 </div>
 ```
 
-# 利用ファイル
+## 利用ファイル
 - [Material Design Lite](https://getmdl.io)
+- [Hugo](https://gohugo.io)
+- [Swiper](https://idangero.us/swiper/)
 - [キャラバンサークル](http://www.wwajp.com)
-- [雨宮慈雨](https://twitter.com/jiujiu1115) - WWAの冒険書のキャラクター画像
-- [プリシー](https://plicy.net/)
+- [Twitter(ブランドリソース)](https://about.twitter.com/ja/company/brand-resources.html)

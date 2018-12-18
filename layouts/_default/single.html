@@ -1,0 +1,14 @@
+{{ define "head" }}
+    {{ if .Params.useSwiper }}
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}css/swiper.min.css">
+        <script src="{{ .Site.BaseURL }}js/swiper.min.js"></script>
+    {{ end }}
+
+    {{ with .Params.additionalScript }}
+        <script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+    {{ end }}
+{{ end }}
+
+{{ define "main" }}
+{{ .Content }}
+{{ end }}
