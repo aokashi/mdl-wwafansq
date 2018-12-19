@@ -96,8 +96,13 @@ body {
 
 .card.card--stand-alone {
     margin: 48px;
-    padding: 24px 16px;
+    padding: 32px 0;
 }
+    .card.card--stand-alone .card__header,
+    .card.card--stand-alone .card__content,
+    .card.card--stand-alone .card__footer {
+        padding: 0 32px;
+    }
 .card__date {
     font-size: 16px;
 }

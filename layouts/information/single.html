@@ -1,8 +1,13 @@
 {{ define "main" }}
 <div class="section content-width content-width--text mdl-grid">
     <div class="{{ .Section }}-{{ .File.BaseFileName }}-card card card--stand-alone mdl-card mdl-cell mdl-cell--12-col mdl-shadow--4dp">
-        <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">{{ .Title }}</h2>
+        <div class="card__header">
+            <nav class="card__breadcrumbs">
+                <a href="/" title="{{ .Site.Title }}">Home</a> &gt; <a href="/{{ .Section }}">{{ .Section }}</a> &gt; Here
+            </nav>
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">{{ .Title }}</h2>
+            </div>
         </div>
         {{ with .Params.image }}
         <div class="mdl-card__media">
@@ -10,10 +15,10 @@
         </div>
         {{ end }}
         {{ partial "date.html" . }}
-        <div class="card__cotent mdl-card__supporting-text">
+        <div class="card__content mdl-card__supporting-text">
 {{ .Content }}
         </div>
-        <div class="mdl-card__actions">
+        <div class="card__footer mdl-card__actions">
             <a class="mdl-button mdl-button--colored" href="{{ .Site.BaseURL }}{{ .Section }}/">
                 <i class="material-icons">arrow_back</i> 戻る
             </a>
