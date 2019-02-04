@@ -15,9 +15,9 @@
         </div>
         {{ end }}
         {{ partial "date.html" . }}
-        <div class="card__content mdl-card__supporting-text">
+        <article class="card__content mdl-card__supporting-text">
 {{ .Content }}
-        </div>
+        </article>
         <div class="card__footer mdl-card__actions">
             <a class="mdl-button mdl-button--colored" href="{{ .Site.BaseURL }}{{ .Section }}/">
                 <i class="material-icons">arrow_back</i> 戻る
