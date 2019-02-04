@@ -103,10 +103,14 @@ article img {
     margin: 48px;
     padding: 32px 0;
 }
+    /* TODO: この後 .card__** が増えていく結末になるので、別途共通化出来るクラスを作るとかする。 */
     .card.card--stand-alone .card__header,
-    .card.card--stand-alone .card__content,
     .card.card--stand-alone .card__footer {
         padding: 0 32px;
+    }
+    .card.card--stand-alone .card__date,
+    .card.card--stand-alone .card__content {
+        padding: 16px 32px;
     }
 .card__date {
     font-size: 16px;
