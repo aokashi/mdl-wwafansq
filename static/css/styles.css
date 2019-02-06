@@ -4,6 +4,11 @@ body {
     background: #f0e0c0;
 }
 
+article ul,
+article ol {
+    padding-left: 1.5em;
+}
+
 article img {
     width: 100%;
     height: auto;
