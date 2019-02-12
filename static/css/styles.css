@@ -4,6 +4,11 @@ body {
     background: #f0e0c0;
 }
 
+article ul,
+article ol {
+    padding-left: 1.5em;
+}
+
 article img {
     width: 100%;
     height: auto;
@@ -106,11 +111,14 @@ article img {
     /* TODO: この後 .card__** が増えていく結末になるので、別途共通化出来るクラスを作るとかする。 */
     .card.card--stand-alone .card__header,
     .card.card--stand-alone .card__footer {
-        padding: 0 32px;
+        padding: 0 4vw;
     }
     .card.card--stand-alone .card__date,
     .card.card--stand-alone .card__content {
-        padding: 16px 32px;
+        padding: 16px 4vw;
+    }
+    .card.card--stand-alone .card__content {
+        width: auto;
     }
 .card__date {
     font-size: 16px;
