@@ -27,6 +27,9 @@ article img {
 .social-btn--twitter {
     background-image: url('social_twitter.png');
 }
+.social-btn--discord {
+    background-image: url('social_discord.png');
+}
 
 .menu--wide {
     display: flex;
