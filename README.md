@@ -60,6 +60,17 @@ WWA FanSquareのWebサイトで使われているHugoのテーマ「mdl-wwafansq
 </div>
 ```
 
+## 設定について
+`config.toml` といった設定ファイルに、下記項目を設定することができます。
+
+- `twitter_url` ... SNSアイコンの Twitter のリンク先
+- `discord_url` ... SNSアイコンの Discord のリンク先 (主に招待リンクに利用します)
+
+## 注意事項
+Discord のロゴはこのリポジトリには含まれていません。
+[Discord の商標ページ](https://discordapp.com/branding) からロゴを取得し、 Discord に連絡をした上で `/static/css/social_discord.png` で配置してください。
+なお、ロゴは白色のご利用をお願いします。
+
 ## 利用ファイル
 - [Material Design Lite](https://getmdl.io)
 - [Hugo](https://gohugo.io)

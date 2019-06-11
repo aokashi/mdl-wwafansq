@@ -20,12 +20,16 @@ article img {
 
 .social-btn {
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 90% auto;
+    background-position: center center;
     cursor: pointer;
 }
 
 .social-btn--twitter {
     background-image: url('social_twitter.png');
+}
+.social-btn--discord {
+    background-image: url('social_discord.png');
 }
 
 .menu--wide {

@@ -39,8 +39,11 @@
             <footer class="fansq__footer footer mdl-mega-footer">
                 <div class="content-width mdl-mega-footer--middle-section">
                     <div class="mdl-mega-footer--left-section">
-                        <button class="mdl-mega-footer__social-btn social-btn social-btn--twitter" onclick="location.href='https://twitter.com/wwa_fansq'">
+                        <button class="mdl-mega-footer__social-btn social-btn social-btn--twitter" onclick="location.href='{{ .Site.Params.twitter_url }}'">
                             <span class="invisible">Twitter</span>
+                        </button>
+                        <button class="mdl-mega-footer__social-btn social-btn social-btn--discord" onclick="location.href='{{ .Site.Params.discord_url }}'">
+                            <span class="invisible">Discord</span>
                         </button>
                     </div>
                     <div class="mdl-mega-footer--right-section">
